@@ -8,11 +8,7 @@
   </information>
   <resources>
     <j2se version="1.6+" href="http://java.sun.com/products/autodl/j2se"/>
-<<<<<<< HEAD
-    <jar href="DragonFeliz.jar" size="2655" download="eager" />
-=======
-    <jar href="DragonFeliz.jar" size="572349" download="eager" />
->>>>>>> c121ce3889e9eb910ebce2232e10bb82a9610cab
+    <jar href="DragonFeliz.jar" size="627054" download="eager" />
   </resources>
   <applet-desc  width="800" height="600" main-class="com.javafx.main.NoJavaFXFallback"  name="DragonFeliz" >
     <param name="requiredFXVersion" value="8.0+"/>
