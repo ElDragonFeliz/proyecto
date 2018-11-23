@@ -99,6 +99,47 @@ public class FXMLVentasController {
                btn_Pasta.setVisible(true);
            }
        });
+       btn_Carne.setOnAction(new EventHandler<ActionEvent>() {
+           @Override
+           public void handle(ActionEvent event) {
+               ocultar_todo();//To change body of generated methods, choose Tools | Templates.
+               btn_Puerco.setVisible(true);
+               btn_Res.setVisible(true);
+               btn_Pollo.setVisible(true);
+               btn_Pescado.setVisible(true);
+               btn_Oveja.setVisible(true);
+           }
+       });
+       btn_Verdura.setOnAction(new EventHandler<ActionEvent>() {
+           @Override
+           public void handle(ActionEvent event) {
+               ocultar_todo();//To change body of generated methods, choose Tools | Templates.
+               btn_Algas.setVisible(true);
+               btn_Apio.setVisible(true);
+               btn_Brocoli.setVisible(true);
+               btn_Cebolla.setVisible(true);
+               btn_Chicharo.setVisible(true);
+               btn_Zanahoria.setVisible(true);
+               btn_Papa.setVisible(true);
+           }
+       });
+       btn_Salsas.setOnAction(new EventHandler<ActionEvent>() {
+           @Override
+           public void handle(ActionEvent event) {
+               ocultar_todo();//To change body of generated methods, choose Tools | Templates.
+               btn_s1.setVisible(true);
+               btn_s2.setVisible(true);
+               btn_s3.setVisible(true);
+           }
+       });
+       btn_Toping.setOnAction(new EventHandler<ActionEvent>() {
+           @Override
+           public void handle(ActionEvent event) {
+               ocultar_todo();//To change body of generated methods, choose Tools | Templates.
+               btn_Huevo.setVisible(true);
+               btn_Aguacate.setVisible(true);
+           }
+       });
        btn_Arroz.setOnAction(new EventHandler<ActionEvent>() {
            @Override
            public void handle(ActionEvent event) {
