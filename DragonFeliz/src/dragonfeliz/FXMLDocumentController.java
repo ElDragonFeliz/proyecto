@@ -5,14 +5,23 @@
  */
 package dragonfeliz;
 
+import java.io.IOException;
 import java.net.URL;
 import java.util.ResourceBundle;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
+import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
+import javafx.scene.Node;
+import javafx.scene.Parent;
+import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.control.TextField;
+import javafx.scene.image.Image;
+import javafx.stage.Stage;
 
 /**
  *
@@ -31,7 +40,32 @@ public class FXMLDocumentController implements Initializable {
 
 
     @FXML
-    void OnAction_Login(ActionEvent event) {
+    void OnAction_Login(ActionEvent event) throws IOException {
+    /*    FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("FXMLVentas.fxml"));
+        Parent root1 = (Parent) fxmlLoader.load();
+        Stage stage = new Stage();
+        stage.setScene(new Scene(root1));
+        stage.setResizable(false);
+        stage.setTitle("Restaurant - El Dragon Feliz");
+        Image ico = new Image("/img/dragon.png"); 
+        stage.getIcons().add(ico);
+
+        stage.show(); */
+        
+        Stage stage = new Stage();
+
+                        stage = (Stage) (((Node) event.getSource()).getScene().getWindow());
+                        stage.close();
+                        Parent root = null;
+                        try {
+                            root = FXMLLoader.load(getClass().getResource("FXMLVentas.fxml"));
+                        } catch (IOException ex) {
+                                Logger.getLogger(FXMLVentasController.class.getName()).log(Level.SEVERE, null, ex);
+                        }
+                        Scene scene = new Scene(root);
+                        stage.setScene(scene);
+                        stage.setTitle("Restaurant - El Dragon Feliz - Ventas");
+                        stage.show();
     }
     
     @Override

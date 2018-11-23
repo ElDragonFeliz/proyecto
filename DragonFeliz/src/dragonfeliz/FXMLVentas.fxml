@@ -1,0 +1,293 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane id="AnchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="450.0" prefWidth="715.0" style="-fx-background-color: #ffd466;" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="dragonfeliz.FXMLVentasController">
+  <children>
+    <Rectangle arcHeight="0.0" arcWidth="0.0" height="85.0" layoutX="0.0" layoutY="0.0" stroke="#202020" strokeType="INSIDE" strokeWidth="4.0" width="729.0">
+      <fill>
+        <Color blue="0.200" green="0.200" red="1.000" fx:id="x1" />
+      </fill>
+    </Rectangle>
+    <Text layoutX="258.0" layoutY="42.0" scaleX="1.0" scaleY="1.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Protoplatillo">
+      <font>
+        <Font name="VAGRounded BT" size="35.0" />
+      </font>
+    </Text>
+    <Text layoutX="270.0" layoutY="69.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Crea y come a tu gusto">
+      <font>
+        <Font name="Segoe UI Semibold Italic" size="17.0" />
+      </font>
+    </Text>
+    <ImageView fitHeight="72.0" fitWidth="72.0" layoutX="629.0" layoutY="7.0" pickOnBounds="true" preserveRatio="true">
+      <image>
+        <Image url="@../img/arroz.png" />
+      </image>
+    </ImageView>
+    <Rectangle arcHeight="5.0" arcWidth="5.0" fill="$x1" height="374.0" layoutX="0.0" layoutY="85.0" stroke="BLACK" strokeType="CENTERED" strokeWidth="0.0" width="220.0" />
+    <Button fx:id="btn_Base" alignment="CENTER" cancelButton="false" contentDisplay="LEFT" defaultButton="false" disable="false" focusTraversable="true" layoutX="26.0" layoutY="113.0" mnemonicParsing="false" pickOnBounds="false" prefHeight="47.0" prefWidth="175.4951171875" text="Base de Platillo" textAlignment="LEFT" underline="false" visible="true" wrapText="false">
+      <font>
+        <Font name="Berlin Sans FB Demi Bold" size="16.0" fx:id="x2" />
+      </font>
+      <graphic>
+        <ImageView fitHeight="22.68603515625" fitWidth="22.68603515625" pickOnBounds="true" preserveRatio="true">
+          <image>
+            <Image url="@../img/plato.png" />
+          </image>
+        </ImageView>
+      </graphic>
+    </Button>
+    <Button fx:id="btn_Carne" alignment="CENTER" blendMode="SRC_OVER" cancelButton="false" defaultButton="false" disable="false" focusTraversable="true" font="$x2" layoutX="26.0" layoutY="166.0" mnemonicParsing="false" pickOnBounds="false" prefHeight="47.0" prefWidth="175.4951171875" text="Carnes" textAlignment="LEFT" underline="false" visible="true" wrapText="false">
+      <graphic>
+        <ImageView fitHeight="22.68603515625" fitWidth="22.68603515625" pickOnBounds="true" preserveRatio="true">
+          <image>
+            <Image url="@../img/filete.png" />
+          </image>
+        </ImageView>
+      </graphic>
+    </Button>
+    <Button fx:id="btn_Verdura" cancelButton="false" defaultButton="false" disable="false" focusTraversable="true" font="$x2" layoutX="26.0" layoutY="221.0" mnemonicParsing="false" pickOnBounds="false" prefHeight="47.0" prefWidth="175.4951171875" text="Verduras" textAlignment="LEFT" underline="false" visible="true" wrapText="false">
+      <graphic>
+        <ImageView fitHeight="22.68603515625" fitWidth="22.68603515625" pickOnBounds="true" preserveRatio="true">
+          <image>
+            <Image url="@../img/brocoli.png" />
+          </image>
+        </ImageView>
+      </graphic>
+    </Button>
+    <Button fx:id="btn_Salsas" cancelButton="false" defaultButton="false" disable="false" focusTraversable="true" font="$x2" layoutX="26.0" layoutY="274.0" mnemonicParsing="false" pickOnBounds="false" prefHeight="47.0" prefWidth="175.4951171875" text="Salsas" textAlignment="LEFT" underline="false" visible="true" wrapText="false">
+      <graphic>
+        <ImageView fitHeight="22.68603515625" fitWidth="22.68603515625" pickOnBounds="true" preserveRatio="true">
+          <image>
+            <Image url="@../img/gravy.png" />
+          </image>
+        </ImageView>
+      </graphic>
+    </Button>
+    <Button fx:id="btn_Toping" cancelButton="false" defaultButton="false" disable="false" focusTraversable="true" font="$x2" layoutX="26.0" layoutY="327.0" mnemonicParsing="false" pickOnBounds="false" prefHeight="47.0" prefWidth="175.4951171875" text="Toping" textAlignment="LEFT" underline="false" visible="true" wrapText="false">
+      <graphic>
+        <ImageView fitHeight="22.68603515625" fitWidth="22.68603515625" pickOnBounds="true" preserveRatio="true">
+          <image>
+            <Image url="@../img/plato.png" />
+          </image>
+        </ImageView>
+      </graphic>
+    </Button>
+    <Button fx:id="btn_Agregar" alignment="CENTER" cancelButton="false" contentDisplay="LEFT" defaultButton="false" disable="false" focusTraversable="true" font="$x2" layoutX="362.0" layoutY="398.0" mnemonicParsing="false" pickOnBounds="false" prefHeight="30.0" prefWidth="153.0" text="Agregar " textAlignment="LEFT" underline="false" visible="true" wrapText="false">
+      <graphic>
+        <ImageView fitHeight="22.68603515625" fitWidth="22.68603515625" pickOnBounds="true" preserveRatio="true">
+          <image>
+            <Image url="@../img/boton-circular-de-suma.png" />
+          </image>
+        </ImageView>
+      </graphic>
+    </Button>
+    <Button fx:id="btn_Cobrar" alignment="CENTER" cancelButton="false" contentDisplay="LEFT" defaultButton="false" disable="false" focusTraversable="true" font="$x2" layoutX="533.0" layoutY="398.0" mnemonicParsing="false" pickOnBounds="false" prefHeight="30.0" prefWidth="153.0" text="Cobrar" textAlignment="LEFT" underline="false" visible="true" wrapText="false">
+      <graphic>
+        <ImageView fitHeight="22.68603515625" fitWidth="22.68603515625" pickOnBounds="true" preserveRatio="true">
+          <image>
+            <Image url="@../img/simbolo-de-dolar.png" />
+          </image>
+        </ImageView>
+      </graphic>
+    </Button>
+    <TableView layoutX="464.0" layoutY="133.0" prefHeight="227.0" prefWidth="224.00009999999747">
+      <columns>
+        <TableColumn maxWidth="5000.0" minWidth="10.0" prefWidth="43.0" sortType="ASCENDING" text="ID" fx:id="tc_ID" />
+        <TableColumn maxWidth="5000.0" minWidth="10.0" prefWidth="106.0" text="Producto" fx:id="tc_Producto" />
+        <TableColumn prefWidth="75.0" text="Precio" fx:id="tc_Precio" />
+      </columns>
+    </TableView>
+    <Pane disable="false" layoutX="245.0" layoutY="128.0" prefHeight="247.0" prefWidth="185.00009999999747" visible="true">
+      <children>
+        <Button fx:id="btn_Arroz" alignment="CENTER" cancelButton="false" contentDisplay="LEFT" defaultButton="false" disable="false" focusTraversable="true" font="$x2" layoutX="8.0" layoutY="25.0" mnemonicParsing="false" pickOnBounds="false" prefHeight="47.0" prefWidth="175.4951171875" text="Arroz" textAlignment="LEFT" underline="false" visible="false" wrapText="false">
+          <graphic>
+            <ImageView fitHeight="22.68603515625" fitWidth="22.68603515625" pickOnBounds="true" preserveRatio="true">
+              <image>
+                <Image url="@../img/arroz_base.png" />
+              </image>
+            </ImageView>
+          </graphic>
+        </Button>
+        <Button fx:id="btn_Pasta" alignment="CENTER" cancelButton="false" contentDisplay="LEFT" defaultButton="false" disable="false" focusTraversable="true" font="$x2" layoutX="8.0" layoutY="100.0" mnemonicParsing="false" pickOnBounds="false" prefHeight="47.0" prefWidth="175.4951171875" text="Pasta" textAlignment="LEFT" underline="false" visible="false" wrapText="false">
+          <graphic>
+            <ImageView fitHeight="22.68603515625" fitWidth="22.68603515625" pickOnBounds="true" preserveRatio="true">
+              <image>
+                <Image url="@../img/fideos.png" />
+              </image>
+            </ImageView>
+          </graphic>
+        </Button>
+        <Button id="btn_Arroz" fx:id="btn_Puerco" alignment="CENTER" cancelButton="false" contentDisplay="LEFT" defaultButton="false" disable="false" focusTraversable="true" font="$x2" layoutX="6.0" layoutY="0.0" mnemonicParsing="false" pickOnBounds="false" prefHeight="47.0" prefWidth="175.4951171875" text="Puerco" textAlignment="LEFT" underline="false" visible="false" wrapText="false">
+          <graphic>
+            <ImageView fitHeight="22.68603515625" fitWidth="22.68603515625" pickOnBounds="true" preserveRatio="true">
+              <image>
+                <Image url="@../img/cerdo.png" />
+              </image>
+            </ImageView>
+          </graphic>
+        </Button>
+        <Button id="btn_Arroz" fx:id="btn_Res" alignment="CENTER" cancelButton="false" contentDisplay="LEFT" defaultButton="false" disable="false" focusTraversable="true" font="$x2" layoutX="6.0" layoutY="47.0" mnemonicParsing="false" pickOnBounds="false" prefHeight="47.0" prefWidth="175.4951171875" text="Res" textAlignment="LEFT" underline="false" visible="false" wrapText="false">
+          <graphic>
+            <ImageView fitHeight="22.68603515625" fitWidth="22.68603515625" pickOnBounds="true" preserveRatio="true">
+              <image>
+                <Image url="@../img/vaca.png" />
+              </image>
+            </ImageView>
+          </graphic>
+        </Button>
+        <Button id="btn_Arroz" fx:id="btn_Pescado" alignment="CENTER" cancelButton="false" contentDisplay="LEFT" defaultButton="false" disable="false" focusTraversable="true" font="$x2" layoutX="6.0" layoutY="141.0" mnemonicParsing="false" pickOnBounds="false" prefHeight="47.0" prefWidth="175.4951171875" text="Pescado" textAlignment="LEFT" underline="false" visible="false" wrapText="false">
+          <graphic>
+            <ImageView fitHeight="22.68603515625" fitWidth="22.68603515625" pickOnBounds="true" preserveRatio="true">
+              <image>
+                <Image url="@../img/pescado.png" />
+              </image>
+            </ImageView>
+          </graphic>
+        </Button>
+        <Button id="btn_Arroz" fx:id="btn_Oveja" alignment="CENTER" cancelButton="false" contentDisplay="LEFT" defaultButton="false" disable="false" focusTraversable="true" font="$x2" layoutX="6.0" layoutY="188.0" mnemonicParsing="false" pickOnBounds="false" prefHeight="47.0" prefWidth="175.4951171875" text="Oveja" textAlignment="LEFT" underline="false" visible="false" wrapText="false">
+          <graphic>
+            <ImageView fitHeight="22.68603515625" fitWidth="22.68603515625" pickOnBounds="true" preserveRatio="true">
+              <image>
+                <Image url="@../img/oveja.png" />
+              </image>
+            </ImageView>
+          </graphic>
+        </Button>
+        <Button id="btn_Arroz" fx:id="btn_Pollo" alignment="CENTER" cancelButton="false" contentDisplay="LEFT" defaultButton="false" disable="false" focusTraversable="true" font="$x2" layoutX="6.0" layoutY="94.0" mnemonicParsing="false" pickOnBounds="false" prefHeight="47.0" prefWidth="175.4951171875" text="Pollo" textAlignment="LEFT" underline="false" visible="false" wrapText="false">
+          <graphic>
+            <ImageView fitHeight="22.68603515625" fitWidth="22.68603515625" pickOnBounds="true" preserveRatio="true">
+              <image>
+                <Image url="@../img/pollo.png" />
+              </image>
+            </ImageView>
+          </graphic>
+        </Button>
+        <Button id="btn_Arroz" fx:id="btn_Zanahoria" alignment="CENTER" cancelButton="false" contentDisplay="LEFT" defaultButton="false" disable="false" focusTraversable="true" font="$x2" layoutX="5.0" layoutY="7.0" mnemonicParsing="false" pickOnBounds="false" prefHeight="30.0" prefWidth="175.4951171875" text="Zanahoria" textAlignment="LEFT" underline="false" visible="false" wrapText="false">
+          <graphic>
+            <ImageView fitHeight="22.68603515625" fitWidth="22.68603515625" pickOnBounds="true" preserveRatio="true">
+              <image>
+                <Image url="@../img/pollo.png" />
+              </image>
+            </ImageView>
+          </graphic>
+        </Button>
+        <Button id="btn_Arroz" fx:id="btn_Cebolla" alignment="CENTER" cancelButton="false" contentDisplay="LEFT" defaultButton="false" disable="false" focusTraversable="true" font="$x2" layoutX="5.0" layoutY="37.0" mnemonicParsing="false" pickOnBounds="false" prefHeight="30.0" prefWidth="175.4951171875" text="Cebolla" textAlignment="LEFT" underline="false" visible="false" wrapText="false">
+          <graphic>
+            <ImageView fitHeight="22.68603515625" fitWidth="22.68603515625" pickOnBounds="true" preserveRatio="true">
+              <image>
+                <Image url="@../img/pollo.png" />
+              </image>
+            </ImageView>
+          </graphic>
+        </Button>
+        <Button id="btn_Arroz" fx:id="btn_Brocoli" alignment="CENTER" cancelButton="false" contentDisplay="LEFT" defaultButton="false" disable="false" focusTraversable="true" font="$x2" layoutX="5.0" layoutY="94.0" mnemonicParsing="false" pickOnBounds="false" prefHeight="30.0" prefWidth="175.4951171875" text="Brocoli" textAlignment="LEFT" underline="false" visible="false" wrapText="false">
+          <graphic>
+            <ImageView fitHeight="22.68603515625" fitWidth="22.68603515625" pickOnBounds="true" preserveRatio="true">
+              <image>
+                <Image url="@../img/pollo.png" />
+              </image>
+            </ImageView>
+          </graphic>
+        </Button>
+        <Button id="btn_Arroz" fx:id="btn_Algas" alignment="CENTER" cancelButton="false" contentDisplay="LEFT" defaultButton="false" disable="false" focusTraversable="true" font="$x2" layoutX="5.0" layoutY="124.0" mnemonicParsing="false" pickOnBounds="false" prefHeight="30.0" prefWidth="175.4951171875" text="Algas" textAlignment="LEFT" underline="false" visible="false" wrapText="false">
+          <graphic>
+            <ImageView fitHeight="22.68603515625" fitWidth="22.68603515625" pickOnBounds="true" preserveRatio="true">
+              <image>
+                <Image url="@../img/pollo.png" />
+              </image>
+            </ImageView>
+          </graphic>
+        </Button>
+        <Button id="btn_Arroz" fx:id="btn_Papa" alignment="CENTER" cancelButton="false" contentDisplay="LEFT" defaultButton="false" disable="false" focusTraversable="true" font="$x2" layoutX="4.0" layoutY="154.0" mnemonicParsing="false" pickOnBounds="false" prefHeight="30.0" prefWidth="175.4951171875" text="Papa" textAlignment="LEFT" underline="false" visible="false" wrapText="false">
+          <graphic>
+            <ImageView fitHeight="22.68603515625" fitWidth="22.68603515625" pickOnBounds="true" preserveRatio="true">
+              <image>
+                <Image url="@../img/pollo.png" />
+              </image>
+            </ImageView>
+          </graphic>
+        </Button>
+        <Button id="btn_Arroz" fx:id="btn_Chicharo" alignment="CENTER" cancelButton="false" contentDisplay="LEFT" defaultButton="false" disable="false" focusTraversable="true" font="$x2" layoutX="3.0" layoutY="183.0" mnemonicParsing="false" pickOnBounds="false" prefHeight="30.0" prefWidth="175.4951171875" text="Chicharo" textAlignment="LEFT" underline="false" visible="false" wrapText="false">
+          <graphic>
+            <ImageView fitHeight="22.68603515625" fitWidth="22.68603515625" pickOnBounds="true" preserveRatio="true">
+              <image>
+                <Image url="@../img/pollo.png" />
+              </image>
+            </ImageView>
+          </graphic>
+        </Button>
+        <Button id="btn_Arroz" fx:id="btn_Apio" alignment="CENTER" cancelButton="false" contentDisplay="LEFT" defaultButton="false" disable="false" focusTraversable="true" font="$x2" layoutX="5.0" layoutY="67.0" mnemonicParsing="false" pickOnBounds="false" prefHeight="30.0" prefWidth="175.4951171875" text="Apio" textAlignment="LEFT" underline="false" visible="false" wrapText="false">
+          <graphic>
+            <ImageView fitHeight="22.68603515625" fitWidth="22.68603515625" pickOnBounds="true" preserveRatio="true">
+              <image>
+                <Image url="@../img/pollo.png" />
+              </image>
+            </ImageView>
+          </graphic>
+        </Button>
+        <Button id="btn_Arroz" fx:id="btn_s1" alignment="CENTER" cancelButton="false" contentDisplay="LEFT" defaultButton="false" disable="false" focusTraversable="true" font="$x2" layoutX="9.0" layoutY="14.0" mnemonicParsing="false" pickOnBounds="false" prefHeight="47.0" prefWidth="175.4951171875" text="Salsa 1" textAlignment="LEFT" underline="false" visible="false" wrapText="false">
+          <graphic>
+            <ImageView fitHeight="22.68603515625" fitWidth="22.68603515625" pickOnBounds="true" preserveRatio="true">
+              <image>
+                <Image url="@../img/pollo.png" />
+              </image>
+            </ImageView>
+          </graphic>
+        </Button>
+        <Button id="btn_Arroz" fx:id="btn_s2" alignment="CENTER" cancelButton="false" contentDisplay="LEFT" defaultButton="false" disable="false" focusTraversable="true" font="$x2" layoutX="9.0" layoutY="83.0" mnemonicParsing="false" pickOnBounds="false" prefHeight="47.0" prefWidth="175.4951171875" text="Salsa 2" textAlignment="LEFT" underline="false" visible="false" wrapText="false">
+          <graphic>
+            <ImageView fitHeight="22.68603515625" fitWidth="22.68603515625" pickOnBounds="true" preserveRatio="true">
+              <image>
+                <Image url="@../img/pollo.png" />
+              </image>
+            </ImageView>
+          </graphic>
+        </Button>
+        <Button id="btn_Arroz" fx:id="btn_s3" alignment="CENTER" cancelButton="false" contentDisplay="LEFT" defaultButton="false" disable="false" focusTraversable="true" font="$x2" layoutX="9.0" layoutY="155.0" mnemonicParsing="false" pickOnBounds="false" prefHeight="47.0" prefWidth="175.4951171875" text="Salsa 3" textAlignment="LEFT" underline="false" visible="false" wrapText="false">
+          <graphic>
+            <ImageView fitHeight="22.68603515625" fitWidth="22.68603515625" pickOnBounds="true" preserveRatio="true">
+              <image>
+                <Image url="@../img/pollo.png" />
+              </image>
+            </ImageView>
+          </graphic>
+        </Button>
+        <Button id="btn_Arroz" fx:id="btn_Huevo" alignment="CENTER" cancelButton="false" contentDisplay="LEFT" defaultButton="false" disable="false" focusTraversable="true" font="$x2" layoutX="5.0" layoutY="39.0" mnemonicParsing="false" pickOnBounds="false" prefHeight="47.0" prefWidth="175.4951171875" text="Huevo" textAlignment="LEFT" underline="false" visible="false" wrapText="false">
+          <graphic>
+            <ImageView fitHeight="22.68603515625" fitWidth="22.68603515625" pickOnBounds="true" preserveRatio="true">
+              <image>
+                <Image url="@../img/pollo.png" />
+              </image>
+            </ImageView>
+          </graphic>
+        </Button>
+        <Button id="btn_Arroz" fx:id="btn_Aguacate" alignment="CENTER" cancelButton="false" contentDisplay="LEFT" defaultButton="false" disable="false" focusTraversable="true" font="$x2" layoutX="5.0" layoutY="135.0" mnemonicParsing="false" pickOnBounds="false" prefHeight="47.0" prefWidth="175.4951171875" text="Aguacate" textAlignment="LEFT" underline="false" visible="false" wrapText="false">
+          <graphic>
+            <ImageView fitHeight="22.68603515625" fitWidth="22.68603515625" pickOnBounds="true" preserveRatio="true">
+              <image>
+                <Image url="@../img/pollo.png" />
+              </image>
+            </ImageView>
+          </graphic>
+        </Button>
+      </children>
+    </Pane>
+    <Text layoutX="245.0" layoutY="121.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Lista de Producto:">
+      <font>
+        <Font name="Arial Rounded MT Bold" size="15.0" fx:id="x3" />
+      </font>
+    </Text>
+    <Text fx:id="tx_Total" font="$x3" layoutX="608.0" layoutY="380.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Total:" />
+    <TextField fx:id="tf_ID" layoutX="464.0" layoutY="99.0" prefWidth="165.0" promptText="ID Producto" text="" />
+    <Button fx:id="btn_Borrar" layoutX="633.0" layoutY="100.0" mnemonicParsing="false" text="Borrar" />
+  </children>
+</AnchorPane>

@@ -8,9 +8,9 @@
 <?import javafx.scene.layout.*?>
 <?import javafx.scene.text.*?>
 
-<AnchorPane id="AnchorPane" maxHeight="-1.0" maxWidth="-1.0" minHeight="367.5000915527344" minWidth="-1.0" prefHeight="367.5000915527344" prefWidth="715.0" style="-fx-background-color: #dfdfdf;" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="dragonfeliz.FXMLDocumentController">
+<AnchorPane id="AnchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="370.0" prefWidth="715.0" style="-fx-background-color: #dfdfdf;" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="dragonfeliz.FXMLDocumentController">
   <children>
-    <ImageView fitHeight="381.50009218532216" fitWidth="508.66680908203125" layoutX="0.0" layoutY="0.0" pickOnBounds="true" preserveRatio="true">
+    <ImageView fitHeight="396.5000915527344" fitWidth="528.666778164485" layoutX="-20.0" layoutY="0.0" pickOnBounds="true" preserveRatio="true">
       <image>
         <Image url="@../img/login.jpg" />
       </image>
