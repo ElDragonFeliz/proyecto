@@ -99,6 +99,18 @@ public class FXMLVentasController {
                btn_Pasta.setVisible(true);
            }
        });
+       btn_Carne.setOnAction(new EventHandler<ActionEvent>() {
+           @Override
+           public void handle(ActionEvent event) {
+               ocultar_todo();//To change body of generated methods, choose Tools | Templates.
+               btn_Puerco.setVisible(true);
+               btn_Res.setVisible(true);
+               btn_Pollo.setVisible(true);
+               btn_Oveja.setVisible(true);
+               btn_Pescado.setVisible(true);
+               
+           }
+       });
        btn_Arroz.setOnAction(new EventHandler<ActionEvent>() {
            @Override
            public void handle(ActionEvent event) {
