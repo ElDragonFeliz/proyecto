@@ -106,11 +106,8 @@ public class FXMLVentasController {
                btn_Puerco.setVisible(true);
                btn_Res.setVisible(true);
                btn_Pollo.setVisible(true);
-<<<<<<< HEAD
                btn_Oveja.setVisible(true);
                btn_Pescado.setVisible(true);
-               
-=======
                btn_Pescado.setVisible(true);
                btn_Oveja.setVisible(true);
            }
@@ -143,7 +140,6 @@ public class FXMLVentasController {
                ocultar_todo();//To change body of generated methods, choose Tools | Templates.
                btn_Huevo.setVisible(true);
                btn_Aguacate.setVisible(true);
->>>>>>> 9c7209cc3a84b8086c36571669f6acbb44171244
            }
        });
        btn_Arroz.setOnAction(new EventHandler<ActionEvent>() {
