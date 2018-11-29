@@ -27,7 +27,7 @@
         <Font name="Segoe UI Semibold Italic" size="17.0" />
       </font>
     </Text>
-    <ImageView fitHeight="72.0" fitWidth="72.0" layoutX="629.0" layoutY="7.0" pickOnBounds="true" preserveRatio="true">
+    <ImageView fitHeight="65.0" fitWidth="65.0" layoutX="14.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true">
       <image>
         <Image url="@../img/arroz.png" />
       </image>
@@ -175,7 +175,7 @@
           <graphic>
             <ImageView fitHeight="22.68603515625" fitWidth="22.68603515625" pickOnBounds="true" preserveRatio="true">
               <image>
-                <Image url="@../img/pollo.png" />
+                <Image url="@../img/zanahoria.png" />
               </image>
             </ImageView>
           </graphic>
@@ -184,7 +184,7 @@
           <graphic>
             <ImageView fitHeight="22.68603515625" fitWidth="22.68603515625" pickOnBounds="true" preserveRatio="true">
               <image>
-                <Image url="@../img/pollo.png" />
+                <Image url="@../img/cebolla.png" />
               </image>
             </ImageView>
           </graphic>
@@ -193,7 +193,7 @@
           <graphic>
             <ImageView fitHeight="22.68603515625" fitWidth="22.68603515625" pickOnBounds="true" preserveRatio="true">
               <image>
-                <Image url="@../img/pollo.png" />
+                <Image url="@../img/brocoli%20(1).png" />
               </image>
             </ImageView>
           </graphic>
@@ -202,7 +202,7 @@
           <graphic>
             <ImageView fitHeight="22.68603515625" fitWidth="22.68603515625" pickOnBounds="true" preserveRatio="true">
               <image>
-                <Image url="@../img/pollo.png" />
+                <Image url="@../img/alga.png" />
               </image>
             </ImageView>
           </graphic>
@@ -211,7 +211,7 @@
           <graphic>
             <ImageView fitHeight="22.68603515625" fitWidth="22.68603515625" pickOnBounds="true" preserveRatio="true">
               <image>
-                <Image url="@../img/pollo.png" />
+                <Image url="@../img/patata.png" />
               </image>
             </ImageView>
           </graphic>
@@ -220,7 +220,7 @@
           <graphic>
             <ImageView fitHeight="22.68603515625" fitWidth="22.68603515625" pickOnBounds="true" preserveRatio="true">
               <image>
-                <Image url="@../img/pollo.png" />
+                <Image url="@../img/chicharos.png" />
               </image>
             </ImageView>
           </graphic>
@@ -229,7 +229,7 @@
           <graphic>
             <ImageView fitHeight="22.68603515625" fitWidth="22.68603515625" pickOnBounds="true" preserveRatio="true">
               <image>
-                <Image url="@../img/pollo.png" />
+                <Image url="@../img/apio.png" />
               </image>
             </ImageView>
           </graphic>
@@ -238,7 +238,7 @@
           <graphic>
             <ImageView fitHeight="22.68603515625" fitWidth="22.68603515625" pickOnBounds="true" preserveRatio="true">
               <image>
-                <Image url="@../img/pollo.png" />
+                <Image url="@../img/aguacate.png" />
               </image>
             </ImageView>
           </graphic>
@@ -247,7 +247,7 @@
           <graphic>
             <ImageView fitHeight="22.68603515625" fitWidth="22.68603515625" pickOnBounds="true" preserveRatio="true">
               <image>
-                <Image url="@../img/pollo.png" />
+                <Image url="@../img/guacamole%20(1).png" />
               </image>
             </ImageView>
           </graphic>
@@ -256,7 +256,7 @@
           <graphic>
             <ImageView fitHeight="22.68603515625" fitWidth="22.68603515625" pickOnBounds="true" preserveRatio="true">
               <image>
-                <Image url="@../img/pollo.png" />
+                <Image url="@../img/guacamole.png" />
               </image>
             </ImageView>
           </graphic>
@@ -265,7 +265,7 @@
           <graphic>
             <ImageView fitHeight="22.68603515625" fitWidth="22.68603515625" pickOnBounds="true" preserveRatio="true">
               <image>
-                <Image url="@../img/pollo.png" />
+                <Image url="@../img/huevo-con-una-grieta.png" />
               </image>
             </ImageView>
           </graphic>
@@ -274,7 +274,7 @@
           <graphic>
             <ImageView fitHeight="22.68603515625" fitWidth="22.68603515625" pickOnBounds="true" preserveRatio="true">
               <image>
-                <Image url="@../img/pollo.png" />
+                <Image url="@../img/aguacate%20(1).png" />
               </image>
             </ImageView>
           </graphic>
@@ -289,5 +289,17 @@
     <Text fx:id="tx_Total" font="$x3" layoutX="608.0" layoutY="380.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Total:" />
     <TextField fx:id="tf_ID" layoutX="464.0" layoutY="99.0" prefWidth="165.0" promptText="ID Producto" text="" />
     <Button fx:id="btn_Borrar" layoutX="633.0" layoutY="100.0" mnemonicParsing="false" text="Borrar" />
+    <Button fx:id="btn_Salir" layoutX="620.0" layoutY="30.0" minHeight="22.6552734375" mnemonicParsing="false" onAction="#OnAction_Salir" prefHeight="30.0" prefWidth="81.0" text="Salir">
+      <font>
+        <Font name="Berlin Sans FB Demi Bold" size="15.0" />
+      </font>
+      <graphic>
+        <ImageView fitHeight="19.0" fitWidth="19.0" pickOnBounds="true" preserveRatio="true">
+          <image>
+            <Image url="@../img/boton-cerrar-sesion.png" />
+          </image>
+        </ImageView>
+      </graphic>
+    </Button>
   </children>
 </AnchorPane>
