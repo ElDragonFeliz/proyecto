@@ -22,6 +22,7 @@ import javafx.scene.control.Label;
 import javafx.scene.control.TextField;
 import javafx.scene.image.Image;
 import javafx.stage.Stage;
+import javax.swing.JOptionPane;
 
 /**
  *
@@ -51,21 +52,28 @@ public class FXMLDocumentController implements Initializable {
         stage.getIcons().add(ico);
 
         stage.show(); */
+        String user = tf_USer.getText();
+        String pass = tf_Password.getText();
+        Datosconexion da = new Datosconexion();
+        if (da.provocarconexion(user, pass) == 1) {
+            Stage stage = new Stage();
+            stage = (Stage) (((Node) event.getSource()).getScene().getWindow());
+            stage.close();
+            Parent root = null;
+            try {
+                root = FXMLLoader.load(getClass().getResource("FXMLVentas.fxml"));
+            } catch (IOException ex) {
+                    Logger.getLogger(FXMLVentasController.class.getName()).log(Level.SEVERE, null, ex);
+            }
+            Scene scene = new Scene(root);
+            stage.setScene(scene);
+            stage.setTitle("Restaurant - El Dragon Feliz - Ventas");
+            stage.show();          
+        } else {
+            JOptionPane.showMessageDialog (null, "Contraseña incorrecta.");
+        }
         
-        Stage stage = new Stage();
-
-                        stage = (Stage) (((Node) event.getSource()).getScene().getWindow());
-                        stage.close();
-                        Parent root = null;
-                        try {
-                            root = FXMLLoader.load(getClass().getResource("FXMLVentas.fxml"));
-                        } catch (IOException ex) {
-                                Logger.getLogger(FXMLVentasController.class.getName()).log(Level.SEVERE, null, ex);
-                        }
-                        Scene scene = new Scene(root);
-                        stage.setScene(scene);
-                        stage.setTitle("Restaurant - El Dragon Feliz - Ventas");
-                        stage.show();
+        
     }
     
     @Override
