@@ -26,6 +26,7 @@ import javafx.scene.control.TextField;
 import javafx.scene.image.Image;
 import javafx.scene.layout.Pane;
 import javafx.stage.Stage;
+import javax.swing.JOptionPane;
 
 /**
  *
@@ -57,6 +58,7 @@ public class FXMLDocumentController implements Initializable {
     @FXML
     void OnAction_Login(ActionEvent event) throws IOException {
 
+<<<<<<< HEAD
         user = tf_USer.getText();
         password = tf_Password.getText();
         
@@ -80,6 +82,31 @@ public class FXMLDocumentController implements Initializable {
             stage.show();
 
         }
+=======
+        stage.show(); */
+        String user = tf_USer.getText();
+        String pass = tf_Password.getText();
+        Datosconexion da = new Datosconexion();
+        if (da.provocarconexion(user, pass) == 1) {
+            Stage stage = new Stage();
+            stage = (Stage) (((Node) event.getSource()).getScene().getWindow());
+            stage.close();
+            Parent root = null;
+            try {
+                root = FXMLLoader.load(getClass().getResource("FXMLVentas.fxml"));
+            } catch (IOException ex) {
+                    Logger.getLogger(FXMLVentasController.class.getName()).log(Level.SEVERE, null, ex);
+            }
+            Scene scene = new Scene(root);
+            stage.setScene(scene);
+            stage.setTitle("Restaurant - El Dragon Feliz - Ventas");
+            stage.show();          
+        } else {
+            JOptionPane.showMessageDialog (null, "Contraseña incorrecta.");
+        }
+        
+        
+>>>>>>> 4f00bf32cae12a943dc1725ecac28241a404b181
     }
     
     @FXML
