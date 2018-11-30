@@ -70,14 +70,18 @@ public class Opciones extends javax.swing.JFrame {
         initComponents();
         int totalisimo = 0;
         Pedido.setLocationRelativeTo(null);
+        Pedido.setTitle("Restaurante El Dragón Feliz");
         Cocina.setLocationRelativeTo(null);
+        Cocina.setTitle("Restaurante El Dragón Feliz");
         Factura.setLocationRelativeTo(null);
+        Factura.setTitle("Restaurante El Dragón Feliz");
         infoMeseros.setVisible(false);
+        
 
         //ESCRITURA DE PARRAFO EN UN LABEL
         fac.setText("<html><p>RESTAURANTE PITAKS </p><p>Colombia, Barranquilla</p><p>Teléfono: 30011111 - 31900000</p></html>");
         horario.setText("<html><p>Lunes a Sábado 9:00 a.m a 9:00 p.m </p><p> Domingos y Festivos 10:00 a.m a 8:00 p.m</p></html>");
-
+        setIconImage(new ImageIcon(getClass().getResource("/img/Fondos/dragon.png")).getImage());
         //PRODUCTOS
         ptr1 = new Nodo();
         ptr2 = null;

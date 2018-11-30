@@ -1,5 +1,6 @@
 package Frames;
 
+import javax.swing.ImageIcon;
 import javax.swing.JOptionPane;
 
 public class venPrinc extends javax.swing.JFrame {
@@ -8,6 +9,7 @@ public class venPrinc extends javax.swing.JFrame {
 
     public venPrinc() {
         initComponents();
+        setIconImage(new ImageIcon(getClass().getResource("/img/Fondos/dragon.png")).getImage());
         setLocationRelativeTo(null);
     }
 
@@ -82,9 +84,9 @@ public class venPrinc extends javax.swing.JFrame {
         jPanel1.add(jButton1);
         jButton1.setBounds(590, 320, 100, 21);
 
-        jLabel6.setIcon(new javax.swing.ImageIcon("C:\\Users\\CRASH\\Documents\\GitHub\\proyecto\\DragonFeliz\\src\\img\\inicio.jpg")); // NOI18N
+        jLabel6.setIcon(new javax.swing.ImageIcon("C:\\Users\\CRASH\\Documents\\GitHub\\proyecto\\RESTAURANTE 2.0\\src\\Img\\Fondos\\inicio.jpg")); // NOI18N
         jPanel1.add(jLabel6);
-        jLabel6.setBounds(0, 0, 710, 430);
+        jLabel6.setBounds(0, 0, 550, 430);
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -108,6 +110,7 @@ public class venPrinc extends javax.swing.JFrame {
         if ((nom.equals("Administrador")) && (pass.equals("admin"))) {
             nombreA = "Administrador";
             Opciones op = new Opciones();
+            op.setTitle("Restaurante El Dragón Feliz");
             op.setVisible(true);
             op.setLocationRelativeTo(null);
             this.dispose();

@@ -1,7 +1,7 @@
 
 package Frames;
 
-import javafx.scene.image.Image;
+import javax.swing.ImageIcon;
 import restaurante.Cargar;
 
 public final class Splash extends javax.swing.JFrame {
@@ -14,7 +14,7 @@ public final class Splash extends javax.swing.JFrame {
     public Splash() {
         initComponents();
         iniciar();
-        //Image ico = new Image("/img/Fondos/dragon.png");
+        setIconImage(new ImageIcon(getClass().getResource("/img/Fondos/dragon.png")).getImage());
 
     }
 
@@ -22,9 +22,10 @@ public final class Splash extends javax.swing.JFrame {
         setLocationRelativeTo(null);
         hilo = new Cargar(getProgress());
         hilo.start();
+        hilo.setName("El dragón feliz");
         hilo = null;
         this.setLocationRelativeTo(null);
-
+        setIconImage(new ImageIcon(getClass().getResource("/img/Fondos/dragon.png")).getImage());
     }
 
     /**
@@ -88,6 +89,7 @@ public final class Splash extends javax.swing.JFrame {
             
             venPrinc vp = new venPrinc();
             vp.setVisible(true);
+            vp.setTitle("Restaurante El Dragón Feliz");
 
             this.dispose();
         }
