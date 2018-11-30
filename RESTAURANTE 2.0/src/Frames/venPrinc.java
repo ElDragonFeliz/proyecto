@@ -21,8 +21,6 @@ public class venPrinc extends javax.swing.JFrame {
     private void initComponents() {
 
         jPanel1 = new javax.swing.JPanel();
-        jLabel1 = new javax.swing.JLabel();
-        jLabel2 = new javax.swing.JLabel();
         jLabel3 = new javax.swing.JLabel();
         jLabel4 = new javax.swing.JLabel();
         idUser = new javax.swing.JTextField();
@@ -36,28 +34,17 @@ public class venPrinc extends javax.swing.JFrame {
         jPanel1.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
         jPanel1.setLayout(null);
 
-        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Img/usuarioingreso.png"))); // NOI18N
-        jLabel1.setRequestFocusEnabled(false);
-        jPanel1.add(jLabel1);
-        jLabel1.setBounds(200, 110, 190, 170);
-
-        jLabel2.setFont(new java.awt.Font("Tempus Sans ITC", 1, 80)); // NOI18N
-        jLabel2.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel2.setText("PITAKS ");
-        jPanel1.add(jLabel2);
-        jLabel2.setBounds(20, 20, 380, 110);
-
         jLabel3.setFont(new java.awt.Font("Calibri", 0, 18)); // NOI18N
         jLabel3.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel3.setText("User: ");
+        jLabel3.setText("Usuario:");
         jPanel1.add(jLabel3);
-        jLabel3.setBounds(130, 290, 70, 20);
+        jLabel3.setBounds(600, 80, 70, 20);
 
         jLabel4.setFont(new java.awt.Font("Calibri", 0, 18)); // NOI18N
         jLabel4.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel4.setText("Password:");
+        jLabel4.setText("Contraseña:");
         jPanel1.add(jLabel4);
-        jLabel4.setBounds(130, 320, 100, 23);
+        jLabel4.setBounds(590, 190, 100, 23);
 
         idUser.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
         idUser.setCursor(new java.awt.Cursor(java.awt.Cursor.TEXT_CURSOR));
@@ -67,7 +54,7 @@ public class venPrinc extends javax.swing.JFrame {
             }
         });
         jPanel1.add(idUser);
-        idUser.setBounds(260, 290, 140, 21);
+        idUser.setBounds(560, 130, 140, 21);
 
         passwordUser.addKeyListener(new java.awt.event.KeyAdapter() {
             public void keyPressed(java.awt.event.KeyEvent evt) {
@@ -75,12 +62,12 @@ public class venPrinc extends javax.swing.JFrame {
             }
         });
         jPanel1.add(passwordUser);
-        passwordUser.setBounds(260, 330, 140, 20);
+        passwordUser.setBounds(560, 250, 140, 20);
 
         jButton1.setBackground(javax.swing.UIManager.getDefaults().getColor("Button.highlight"));
         jButton1.setFont(new java.awt.Font("Calibri", 1, 14)); // NOI18N
         jButton1.setForeground(new java.awt.Color(255, 255, 255));
-        jButton1.setText("DONE");
+        jButton1.setText("Iniciar Sesión");
         jButton1.setAutoscrolls(true);
         jButton1.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
         jButton1.setContentAreaFilled(false);
@@ -93,17 +80,17 @@ public class venPrinc extends javax.swing.JFrame {
             }
         });
         jPanel1.add(jButton1);
-        jButton1.setBounds(230, 370, 80, 21);
+        jButton1.setBounds(590, 320, 100, 21);
 
-        jLabel6.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Img/JE_opt (3).jpg"))); // NOI18N
+        jLabel6.setIcon(new javax.swing.ImageIcon("C:\\Users\\CRASH\\Documents\\GitHub\\proyecto\\DragonFeliz\\src\\img\\inicio.jpg")); // NOI18N
         jPanel1.add(jLabel6);
-        jLabel6.setBounds(0, 0, 530, 430);
+        jLabel6.setBounds(0, 0, 710, 430);
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, 528, Short.MAX_VALUE)
+            .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, 710, Short.MAX_VALUE)
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -205,8 +192,6 @@ public class venPrinc extends javax.swing.JFrame {
     // Variables declaration - do not modify//GEN-BEGIN:variables
     public javax.swing.JTextField idUser;
     private javax.swing.JButton jButton1;
-    private javax.swing.JLabel jLabel1;
-    private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel jLabel6;
