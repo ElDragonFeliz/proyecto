@@ -21,7 +21,7 @@ public class Opciones extends javax.swing.JFrame {
     File archivo;
     private BufferedWriter bw;
     Thread cronometro;
-
+    
     public Opciones() {
         //HILO CRONOMETRO
         this.cronometro = new Thread() {
@@ -72,6 +72,7 @@ public class Opciones extends javax.swing.JFrame {
         Pedido.setLocationRelativeTo(null);
         Cocina.setLocationRelativeTo(null);
         Factura.setLocationRelativeTo(null);
+        infoMeseros.setVisible(false);
 
         //ESCRITURA DE PARRAFO EN UN LABEL
         fac.setText("<html><p>RESTAURANTE PITAKS </p><p>Colombia, Barranquilla</p><p>Teléfono: 30011111 - 31900000</p></html>");
