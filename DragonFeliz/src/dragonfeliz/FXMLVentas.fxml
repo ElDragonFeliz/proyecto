@@ -2,6 +2,7 @@
 
 <?import java.lang.*?>
 <?import java.util.*?>
+<?import javafx.collections.*?>
 <?import javafx.scene.*?>
 <?import javafx.scene.control.*?>
 <?import javafx.scene.image.*?>
@@ -106,7 +107,7 @@
         <TableColumn prefWidth="75.0" text="Precio" fx:id="tc_Precio" />
       </columns>
     </TableView>
-    <Pane disable="false" layoutX="245.0" layoutY="128.0" prefHeight="247.0" prefWidth="185.00009999999747" visible="true">
+    <Pane disable="false" layoutX="245.0" layoutY="119.0" prefHeight="247.0" prefWidth="185.00009999999747" visible="true">
       <children>
         <Button fx:id="btn_Arroz" alignment="CENTER" cancelButton="false" contentDisplay="LEFT" defaultButton="false" disable="false" focusTraversable="true" font="$x2" layoutX="8.0" layoutY="25.0" mnemonicParsing="false" pickOnBounds="false" prefHeight="47.0" prefWidth="175.4951171875" text="Arroz" textAlignment="LEFT" underline="false" visible="false" wrapText="false">
           <graphic>
@@ -301,5 +302,14 @@
         </ImageView>
       </graphic>
     </Button>
+    <ChoiceBox id="opciones" fx:id="choice" layoutX="384.0" layoutY="104.0" prefWidth="65.0">
+      <items>
+        <FXCollections fx:factory="observableArrayList">
+          <String fx:value="Item 1" />
+          <String fx:value="Item 2" />
+          <String fx:value="Item 3" />
+        </FXCollections>
+      </items>
+    </ChoiceBox>
   </children>
 </AnchorPane>

@@ -36,19 +36,18 @@ public class FXMLDocumentController implements Initializable {
 
     @FXML
     private Button btn_Login;
-    
+
     @FXML
     private Button btn_Cerrar;
 
     @FXML
-    private TextField tf_Password;
+    private TextField pf_Password;
 
     @FXML
     private TextField tf_USer;
-    
+
     @FXML
     private Pane P_Error;
-    
 
     String user;
     String password;
@@ -58,12 +57,24 @@ public class FXMLDocumentController implements Initializable {
     @FXML
     void OnAction_Login(ActionEvent event) throws IOException {
         user = tf_USer.getText();
-        password = tf_Password.getText();
-        
-        if (user.length() == 0 || password.length() == 0 || user.length() == 0 && password.length() == 0) {
-            //warnningAlert("Error", "Introduzca Usuario y/o Contraseña", "Se necesitan parametros");
-            P_Error.setVisible(true);
-        } else {
+        password = pf_Password.getText();
+        System.out.println("USER:"+user+" Pass:"+password);
+        if ((user.equals("Administrador")) && (password.equals("admin"))) {
+            Stage stage = new Stage();
+
+            stage = (Stage) (((Node) event.getSource()).getScene().getWindow());
+            stage.close();
+            Parent root = null;
+            try {
+                root = FXMLLoader.load(getClass().getResource("FXMLAdministrador.fxml"));
+            } catch (IOException ex) {
+                Logger.getLogger(FXMLAdministradorController.class.getName()).log(Level.SEVERE, null, ex);
+            }
+            Scene scene = new Scene(root);
+            stage.setScene(scene);
+            stage.setTitle("Restaurant - El Dragon Feliz - Administrador");
+            stage.show();
+        } else if ((user.equals("Vendedor")) && (password.equals("vender"))) {
             Stage stage = new Stage();
 
             stage = (Stage) (((Node) event.getSource()).getScene().getWindow());
@@ -78,35 +89,13 @@ public class FXMLDocumentController implements Initializable {
             stage.setScene(scene);
             stage.setTitle("Restaurant - El Dragon Feliz - Ventas");
             stage.show();
-
-        }
-=======
-        stage.show(); */
-        String user = tf_USer.getText();
-        String pass = tf_Password.getText();
-        Datosconexion da = new Datosconexion();
-        if (da.provocarconexion(user, pass) == 1) {
-            Stage stage = new Stage();
-            stage = (Stage) (((Node) event.getSource()).getScene().getWindow());
-            stage.close();
-            Parent root = null;
-            try {
-                root = FXMLLoader.load(getClass().getResource("FXMLVentas.fxml"));
-            } catch (IOException ex) {
-                    Logger.getLogger(FXMLVentasController.class.getName()).log(Level.SEVERE, null, ex);
-            }
-            Scene scene = new Scene(root);
-            stage.setScene(scene);
-            stage.setTitle("Restaurant - El Dragon Feliz - Ventas");
-            stage.show();          
         } else {
-            JOptionPane.showMessageDialog (null, "Contraseña incorrecta.");
+            P_Error.setVisible(true);
         }
         
-        
->>>>>>> 4f00bf32cae12a943dc1725ecac28241a404b181
+
     }
-    
+
     @FXML
     void OnAction_Cerrar(ActionEvent event) throws IOException {
         P_Error.setVisible(false);
