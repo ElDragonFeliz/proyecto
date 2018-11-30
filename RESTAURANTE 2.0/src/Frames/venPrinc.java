@@ -49,13 +49,13 @@ public class venPrinc extends javax.swing.JFrame {
 
         jLabel3.setFont(new java.awt.Font("Calibri", 0, 18)); // NOI18N
         jLabel3.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel3.setText("User: ");
+        jLabel3.setText("Usuario:");
         jPanel1.add(jLabel3);
         jLabel3.setBounds(130, 290, 70, 20);
 
         jLabel4.setFont(new java.awt.Font("Calibri", 0, 18)); // NOI18N
         jLabel4.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel4.setText("Password:");
+        jLabel4.setText("Contraseña:");
         jPanel1.add(jLabel4);
         jLabel4.setBounds(130, 320, 100, 23);
 
@@ -67,7 +67,7 @@ public class venPrinc extends javax.swing.JFrame {
             }
         });
         jPanel1.add(idUser);
-        idUser.setBounds(260, 290, 140, 23);
+        idUser.setBounds(260, 290, 140, 21);
 
         passwordUser.addKeyListener(new java.awt.event.KeyAdapter() {
             public void keyPressed(java.awt.event.KeyEvent evt) {
