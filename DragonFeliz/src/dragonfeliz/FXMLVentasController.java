@@ -5,6 +5,7 @@ import java.net.URL;
 import java.util.ResourceBundle;
 import java.util.logging.Level;
 import java.util.logging.Logger;
+import javafx.collections.FXCollections;
 import javafx.event.ActionEvent;
 import javafx.event.EventHandler;
 import javafx.fxml.FXML;
@@ -13,6 +14,7 @@ import javafx.scene.Node;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
+import javafx.scene.control.ChoiceBox;
 import javafx.scene.control.TableColumn;
 import javafx.scene.control.TextField;
 import javafx.scene.text.Text;
@@ -60,7 +62,12 @@ public class FXMLVentasController {
     private Text tx_Total;
 
     @FXML
+    ChoiceBox choice = new ChoiceBox(FXCollections.observableArrayList("Primera", "segunda" ,"tercera")
+    );
+
+    @FXML
     void initialize() {
+
         btn_Base.setOnAction(new EventHandler<ActionEvent>() {
             @Override
             public void handle(ActionEvent event) {
@@ -119,64 +126,64 @@ public class FXMLVentasController {
                 ocultar_todo();//To change body of generated methods, choose Tools | Templates.
             }
         });
-       btn_Base.setOnAction(new EventHandler<ActionEvent>() {
-           @Override
-           public void handle(ActionEvent event) {
-               ocultar_todo();//To change body of generated methods, choose Tools | Templates.
-               btn_Arroz.setVisible(true);
-               btn_Pasta.setVisible(true);
-           }
-       });
-       btn_Carne.setOnAction(new EventHandler<ActionEvent>() {
-           @Override
-           public void handle(ActionEvent event) {
-               ocultar_todo();//To change body of generated methods, choose Tools | Templates.
-               btn_Puerco.setVisible(true);
-               btn_Res.setVisible(true);
-               btn_Pollo.setVisible(true);
-               btn_Oveja.setVisible(true);
-               btn_Pescado.setVisible(true);
-               btn_Pescado.setVisible(true);
-               btn_Oveja.setVisible(true);
-           }
-       });
-       btn_Verdura.setOnAction(new EventHandler<ActionEvent>() {
-           @Override
-           public void handle(ActionEvent event) {
-               ocultar_todo();//To change body of generated methods, choose Tools | Templates.
-               btn_Algas.setVisible(true);
-               btn_Apio.setVisible(true);
-               btn_Brocoli.setVisible(true);
-               btn_Cebolla.setVisible(true);
-               btn_Chicharo.setVisible(true);
-               btn_Zanahoria.setVisible(true);
-               btn_Papa.setVisible(true);
-           }
-       });
-       btn_Salsas.setOnAction(new EventHandler<ActionEvent>() {
-           @Override
-           public void handle(ActionEvent event) {
-               ocultar_todo();//To change body of generated methods, choose Tools | Templates.
-               btn_s1.setVisible(true);
-               btn_s2.setVisible(true);
-               btn_s3.setVisible(true);
-           }
-       });
-       btn_Toping.setOnAction(new EventHandler<ActionEvent>() {
-           @Override
-           public void handle(ActionEvent event) {
-               ocultar_todo();//To change body of generated methods, choose Tools | Templates.
-               btn_Huevo.setVisible(true);
-               btn_Aguacate.setVisible(true);
-           }
-       });
-       btn_Arroz.setOnAction(new EventHandler<ActionEvent>() {
-           @Override
-           public void handle(ActionEvent event) {
-               System.out.println("SE AGREGO ARROZ");
-               ocultar_todo();//To change body of generated methods, choose Tools | Templates.
-           }
-       });
+        btn_Base.setOnAction(new EventHandler<ActionEvent>() {
+            @Override
+            public void handle(ActionEvent event) {
+                ocultar_todo();//To change body of generated methods, choose Tools | Templates.
+                btn_Arroz.setVisible(true);
+                btn_Pasta.setVisible(true);
+            }
+        });
+        btn_Carne.setOnAction(new EventHandler<ActionEvent>() {
+            @Override
+            public void handle(ActionEvent event) {
+                ocultar_todo();//To change body of generated methods, choose Tools | Templates.
+                btn_Puerco.setVisible(true);
+                btn_Res.setVisible(true);
+                btn_Pollo.setVisible(true);
+                btn_Oveja.setVisible(true);
+                btn_Pescado.setVisible(true);
+                btn_Pescado.setVisible(true);
+                btn_Oveja.setVisible(true);
+            }
+        });
+        btn_Verdura.setOnAction(new EventHandler<ActionEvent>() {
+            @Override
+            public void handle(ActionEvent event) {
+                ocultar_todo();//To change body of generated methods, choose Tools | Templates.
+                btn_Algas.setVisible(true);
+                btn_Apio.setVisible(true);
+                btn_Brocoli.setVisible(true);
+                btn_Cebolla.setVisible(true);
+                btn_Chicharo.setVisible(true);
+                btn_Zanahoria.setVisible(true);
+                btn_Papa.setVisible(true);
+            }
+        });
+        btn_Salsas.setOnAction(new EventHandler<ActionEvent>() {
+            @Override
+            public void handle(ActionEvent event) {
+                ocultar_todo();//To change body of generated methods, choose Tools | Templates.
+                btn_s1.setVisible(true);
+                btn_s2.setVisible(true);
+                btn_s3.setVisible(true);
+            }
+        });
+        btn_Toping.setOnAction(new EventHandler<ActionEvent>() {
+            @Override
+            public void handle(ActionEvent event) {
+                ocultar_todo();//To change body of generated methods, choose Tools | Templates.
+                btn_Huevo.setVisible(true);
+                btn_Aguacate.setVisible(true);
+            }
+        });
+        btn_Arroz.setOnAction(new EventHandler<ActionEvent>() {
+            @Override
+            public void handle(ActionEvent event) {
+                System.out.println("SE AGREGO ARROZ");
+                ocultar_todo();//To change body of generated methods, choose Tools | Templates.
+            }
+        });
     }
 
     void ocultar_todo() {

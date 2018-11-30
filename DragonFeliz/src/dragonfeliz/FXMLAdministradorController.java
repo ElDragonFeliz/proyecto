@@ -94,17 +94,6 @@ public class FXMLAdministradorController implements Initializable {
             stage.show();
     }
     
-    @FXML
-    void OnAction_Modificar(ActionEvent event) {
-        P_Opcion1.setVisible(true);
-        btn_Admin.setOnAction(new EventHandler<ActionEvent>() {
-            @Override
-            public void handle(ActionEvent event) {
-                P_Opcion1.setVisible(false);
-                P_Modificar.setVisible(true);
-            }
-        });
-    }
 
 
     @FXML
