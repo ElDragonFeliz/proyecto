@@ -62,9 +62,7 @@ public class FXMLVentasController {
     private Text tx_Total;
 
     @FXML
-    ChoiceBox choice = new ChoiceBox(FXCollections.observableArrayList("Primera", "segunda" ,"tercera")
-    );
-
+    private ChoiceBox choice;
     @FXML
     void initialize() {
 
