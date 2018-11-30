@@ -2629,7 +2629,7 @@ int contador = 0;
             }
         }
 
-        JOptionPane.showMessageDialog(null, "El mesero que mas ventas realizo fue: " + mayor2, "PITAKS", JOptionPane.INFORMATION_MESSAGE);
+        JOptionPane.showMessageDialog(null, "El mesero que mas ventas realizo fue: " + mayor2, "El dragón feliz", JOptionPane.INFORMATION_MESSAGE);
     }//GEN-LAST:event_jButton23ActionPerformed
 
     private void jButton18ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton18ActionPerformed
