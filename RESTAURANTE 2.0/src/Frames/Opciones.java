@@ -2573,10 +2573,10 @@ int contador = 0;
         String t = TOTALtot.getText();
 
         if (Integer.parseInt(numMesa2.getText()) == index) {
-            JOptionPane.showMessageDialog(null, "La mesa " + index + " tuvo ventas de " + t, "PITAKS", JOptionPane.INFORMATION_MESSAGE);
+            JOptionPane.showMessageDialog(null, "La mesa " + index + " tuvo ventas de " + t, "El dragón feliz", JOptionPane.INFORMATION_MESSAGE);
 
         } else {
-            JOptionPane.showMessageDialog(null, "La mesa " + index + " no ha realizdo ventas. TOTAL = 0", "PITAKS", JOptionPane.INFORMATION_MESSAGE);
+            JOptionPane.showMessageDialog(null, "La mesa " + index + " no ha realizdo ventas. TOTAL = 0", "El dragón feliz", JOptionPane.INFORMATION_MESSAGE);
         }
 
 

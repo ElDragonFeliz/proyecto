@@ -1,6 +1,7 @@
 
 package Frames;
 
+import javafx.scene.image.Image;
 import restaurante.Cargar;
 
 public final class Splash extends javax.swing.JFrame {
@@ -13,6 +14,7 @@ public final class Splash extends javax.swing.JFrame {
     public Splash() {
         initComponents();
         iniciar();
+        //Image ico = new Image("/img/Fondos/dragon.png");
 
     }
 
@@ -43,7 +45,7 @@ public final class Splash extends javax.swing.JFrame {
         setMinimumSize(new java.awt.Dimension(600, 376));
         setUndecorated(true);
 
-        jLabel1.setIcon(new javax.swing.ImageIcon("C:\\Users\\CRASH\\Documents\\GitHub\\proyecto\\RESTAURANTE 2.0\\src\\Img\\login.jpg")); // NOI18N
+        jLabel1.setIcon(new javax.swing.ImageIcon("C:\\Users\\CRASH\\Documents\\GitHub\\proyecto\\RESTAURANTE 2.0\\src\\Img\\Fondos\\login.jpg")); // NOI18N
 
         progress.addChangeListener(new javax.swing.event.ChangeListener() {
             public void stateChanged(javax.swing.event.ChangeEvent evt) {
