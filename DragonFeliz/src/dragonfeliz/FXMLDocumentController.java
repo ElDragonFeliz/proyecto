@@ -57,8 +57,6 @@ public class FXMLDocumentController implements Initializable {
 
     @FXML
     void OnAction_Login(ActionEvent event) throws IOException {
-
-<<<<<<< HEAD
         user = tf_USer.getText();
         password = tf_Password.getText();
         
