@@ -58,7 +58,6 @@ public class FXMLDocumentController implements Initializable {
     @FXML
     void OnAction_Login(ActionEvent event) throws IOException {
 
-<<<<<<< HEAD
         user = tf_USer.getText();
         password = tf_Password.getText();
         
@@ -82,8 +81,7 @@ public class FXMLDocumentController implements Initializable {
             stage.show();
 
         }
-=======
-        stage.show(); */
+        /*
         String user = tf_USer.getText();
         String pass = tf_Password.getText();
         Datosconexion da = new Datosconexion();
@@ -103,10 +101,9 @@ public class FXMLDocumentController implements Initializable {
             stage.show();          
         } else {
             JOptionPane.showMessageDialog (null, "Contraseña incorrecta.");
-        }
+        }*/
         
         
->>>>>>> 4f00bf32cae12a943dc1725ecac28241a404b181
     }
     
     @FXML

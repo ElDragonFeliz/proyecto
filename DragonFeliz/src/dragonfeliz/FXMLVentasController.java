@@ -61,7 +61,6 @@ public class FXMLVentasController {
 
     @FXML
     void initialize() {
-<<<<<<< HEAD
         btn_Base.setOnAction(new EventHandler<ActionEvent>() {
             @Override
             public void handle(ActionEvent event) {
@@ -120,7 +119,6 @@ public class FXMLVentasController {
                 ocultar_todo();//To change body of generated methods, choose Tools | Templates.
             }
         });
-=======
        btn_Base.setOnAction(new EventHandler<ActionEvent>() {
            @Override
            public void handle(ActionEvent event) {
@@ -179,7 +177,6 @@ public class FXMLVentasController {
                ocultar_todo();//To change body of generated methods, choose Tools | Templates.
            }
        });
->>>>>>> 4f00bf32cae12a943dc1725ecac28241a404b181
     }
 
     void ocultar_todo() {

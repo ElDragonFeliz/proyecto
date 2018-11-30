@@ -14,17 +14,15 @@ import java.sql.DriverManager;
  */
 public class Conexion {
     
-    public Connection cadena_conexion1 () {
+   /* public Connection cadena_conexion1 () {
         Connection cn1 = null;
         
         try {
             Class.forName("com.microsoft.sqlserver.jdbc.SQLServerDriver");
-            cn1 = DriverManager.getConnection("jdbc:sqlserver://localhost:1433;databaseName=dragon","alberto","slmca");
+            cn1 = DriverManager.getConnection("jdbc:sqlserver://localhost:1433;databaseName=dragon","erick","1234");
         } catch (Exception e) {
             System.out.println (e);
         }
-        
         return cn1;
-    }
-    
+    }*/
 }

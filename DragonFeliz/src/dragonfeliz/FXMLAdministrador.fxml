@@ -12,7 +12,7 @@
 
 <AnchorPane id="AnchorPane" prefHeight="450.0" prefWidth="715.0" style="-fx-background-color: #bfbfbf;" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="dragonfeliz.FXMLAdministradorController">
   <children>
-    <Pane layoutX="194.0" layoutY="112.0" prefHeight="315.0" prefWidth="495.0">
+    <Pane layoutX="194.0" layoutY="112.0" prefHeight="315.0" prefWidth="495.0" style="-fx-border-color: black;" visible="false">
       <children>
         <Pane fx:id="P_Opcion1" layoutX="86.0" layoutY="37.0" prefHeight="200.0" prefWidth="324.0" visible="false">
           <children>
@@ -29,7 +29,7 @@
             <Button id="btn_Modificar" fx:id="btn_Empleados" font="$x4" layoutX="100.0" layoutY="133.0" mnemonicParsing="false" onAction="#OnAction_ModificarEmpleados" prefHeight="46.0" prefWidth="124.0" text="Empleados" />
           </children>
         </Pane>
-        <Pane layoutX="82.0" layoutY="49.0" prefHeight="200.0" prefWidth="331.0" visible="false">
+        <Pane fx:id="P_Modificar" layoutX="82.0" layoutY="49.0" prefHeight="200.0" prefWidth="331.0" visible="false">
           <children>
             <Text layoutX="14.0" layoutY="54.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Nuevo Nombre:">
               <font>
@@ -48,7 +48,7 @@
             <Text fx:id="t_Modificar" font="$x2" layoutX="14.0" layoutY="15.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Modificar Administrador" />
           </children>
         </Pane>
-        <TextArea editable="false" layoutX="14.0" layoutY="0.0" prefHeight="301.0" prefWidth="467.0" wrapText="true" />
+        <TextArea fx:id="ta_VentaDia" editable="false" layoutX="14.0" layoutY="0.0" prefHeight="301.0" prefWidth="467.0" visible="false" wrapText="true" />
       </children>
     </Pane>
     <Rectangle arcHeight="5.0" arcWidth="5.0" height="85.0" layoutX="0.0" layoutY="0.0" stroke="BLACK" strokeType="INSIDE" width="715.0">
@@ -75,7 +75,7 @@
         <Font name="Segoe UI Black" size="18.0" />
       </font>
     </Text>
-    <Button fx:id="btn_Salir" layoutX="646.0" layoutY="24.0" mnemonicParsing="false" onAction="#OnAction_Salir" prefHeight="38.0" prefWidth="39.0" text="">
+    <Button fx:id="btn_Salir" layoutX="646.0" layoutY="22.0" mnemonicParsing="false" onAction="#OnAction_Salir" prefHeight="38.0" prefWidth="39.0" text="">
       <graphic>
         <ImageView fitHeight="25.5" fitWidth="34.0" mouseTransparent="true" pickOnBounds="true" preserveRatio="true">
           <image>
