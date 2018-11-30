@@ -48,7 +48,7 @@
     <Component class="javax.swing.JLabel" name="jLabel1">
       <Properties>
         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-          <Image iconType="3" name="/Img/logo2_opt (1).png"/>
+          <Image iconType="2" name="C:\Users\CRASH\Documents\GitHub\proyecto\RESTAURANTE 2.0\src\Img\login.jpg"/>
         </Property>
       </Properties>
     </Component>
@@ -76,11 +76,11 @@
             <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
               <Color blue="ff" green="ff" red="ff" type="rgb"/>
             </Property>
-            <Property name="text" type="java.lang.String" value="DISE&#xd1;ADO POR: SHARON FIGUEROA &amp; KRISTELL URUETA"/>
+            <Property name="text" type="java.lang.String" value="DISE&#xd1;ADO POR: PHANTOMSOFT INC."/>
           </Properties>
           <Constraints>
             <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-              <AbsoluteConstraints x="270" y="4" width="320" height="20"/>
+              <AbsoluteConstraints x="390" y="4" width="200" height="20"/>
             </Constraint>
           </Constraints>
         </Component>

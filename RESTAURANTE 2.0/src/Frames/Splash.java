@@ -40,11 +40,10 @@ public final class Splash extends javax.swing.JFrame {
         jLabel2 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
-        setMaximumSize(new java.awt.Dimension(600, 376));
         setMinimumSize(new java.awt.Dimension(600, 376));
         setUndecorated(true);
 
-        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Img/logo2_opt (1).png"))); // NOI18N
+        jLabel1.setIcon(new javax.swing.ImageIcon("C:\\Users\\CRASH\\Documents\\GitHub\\proyecto\\RESTAURANTE 2.0\\src\\Img\\login.jpg")); // NOI18N
 
         progress.addChangeListener(new javax.swing.event.ChangeListener() {
             public void stateChanged(javax.swing.event.ChangeEvent evt) {
@@ -57,9 +56,9 @@ public final class Splash extends javax.swing.JFrame {
 
         jLabel2.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
         jLabel2.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel2.setText("DISEÑADO POR: SHARON FIGUEROA & KRISTELL URUETA");
+        jLabel2.setText("DISEÑADO POR: PHANTOMSOFT INC.");
         jPanel1.add(jLabel2);
-        jLabel2.setBounds(270, 4, 320, 20);
+        jLabel2.setBounds(390, 4, 200, 20);
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);

@@ -67,7 +67,7 @@ public class venPrinc extends javax.swing.JFrame {
             }
         });
         jPanel1.add(idUser);
-        idUser.setBounds(260, 290, 140, 23);
+        idUser.setBounds(260, 290, 140, 21);
 
         passwordUser.addKeyListener(new java.awt.event.KeyAdapter() {
             public void keyPressed(java.awt.event.KeyEvent evt) {
