@@ -1,5 +1,6 @@
 package Frames;
 
+import Frames.venPrinc;
 import Uml.Factura;
 import java.awt.event.ItemEvent;
 import java.util.Date;
@@ -79,7 +80,7 @@ public class Opciones extends javax.swing.JFrame {
         
 
         //ESCRITURA DE PARRAFO EN UN LABEL
-        fac.setText("<html><p>RESTAURANTE PITAKS </p><p>Colombia, Barranquilla</p><p>Teléfono: 30011111 - 31900000</p></html>");
+        fac.setText("<html><p>RESTAURANTE EL DRAGÓN FELIZ </p><p>Tuxtla Gutiérrez, Chiapas</p><p>Teléfono: 964-100-5627 - 961-214-0519</p></html>");
         horario.setText("<html><p>Lunes a Sábado 9:00 a.m a 9:00 p.m </p><p> Domingos y Festivos 10:00 a.m a 8:00 p.m</p></html>");
         setIconImage(new ImageIcon(getClass().getResource("/img/Fondos/dragon.png")).getImage());
         //PRODUCTOS
@@ -369,7 +370,7 @@ public class Opciones extends javax.swing.JFrame {
         pagos = new javax.swing.JButton();
         jLabel9 = new javax.swing.JLabel();
 
-        Menu.setTitle("MENU PITAKS");
+        Menu.setTitle("MENU EL DRAGÓN FELIZ");
         Menu.setMinimumSize(new java.awt.Dimension(850, 611));
         Menu.setResizable(false);
 
@@ -685,7 +686,7 @@ public class Opciones extends javax.swing.JFrame {
             }
         });
         jPanel8.add(nombre);
-        nombre.setBounds(210, 100, 100, 20);
+        nombre.setBounds(210, 100, 100, 19);
 
         label.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
         label.setForeground(new java.awt.Color(255, 255, 255));
@@ -699,7 +700,7 @@ public class Opciones extends javax.swing.JFrame {
             }
         });
         jPanel8.add(jTextField1);
-        jTextField1.setBounds(210, 140, 100, 20);
+        jTextField1.setBounds(210, 140, 100, 19);
 
         jLabel10.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
         jLabel10.setForeground(new java.awt.Color(255, 255, 255));
@@ -717,7 +718,7 @@ public class Opciones extends javax.swing.JFrame {
             }
         });
         jPanel8.add(jButton16);
-        jButton16.setBounds(20, 410, 60, 41);
+        jButton16.setBounds(20, 410, 60, 42);
 
         label1.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
         label1.setForeground(new java.awt.Color(255, 255, 255));
@@ -728,7 +729,7 @@ public class Opciones extends javax.swing.JFrame {
         numMesero.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
         numMesero.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "1", "2", "3", "4" }));
         jPanel8.add(numMesero);
-        numMesero.setBounds(230, 180, 60, 20);
+        numMesero.setBounds(230, 180, 60, 23);
 
         guardarInfo.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
         guardarInfo.setText("Guardar");
@@ -845,7 +846,7 @@ public class Opciones extends javax.swing.JFrame {
 
         jLabel23.setFont(new java.awt.Font("Times New Roman", 1, 48)); // NOI18N
         jLabel23.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel23.setText("PITAKS ");
+        jLabel23.setText("EL DRAGÓN FELIZ ");
         jPanel3.add(jLabel23, new org.netbeans.lib.awtextra.AbsoluteConstraints(470, 40, 240, -1));
 
         numMeserito.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
@@ -897,7 +898,7 @@ public class Opciones extends javax.swing.JFrame {
             }
         });
         jPanel7.add(cantProdNuevo);
-        cantProdNuevo.setBounds(210, 100, 130, 20);
+        cantProdNuevo.setBounds(210, 100, 130, 19);
 
         jButton8.setBackground(java.awt.Color.white);
         jButton8.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
@@ -928,7 +929,7 @@ public class Opciones extends javax.swing.JFrame {
             }
         });
         jPanel7.add(nuevoProd);
-        nuevoProd.setBounds(210, 60, 130, 20);
+        nuevoProd.setBounds(210, 60, 130, 19);
 
         jLabel25.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Img/kitchenthis.jpg"))); // NOI18N
         jPanel7.add(jLabel25);
@@ -1126,7 +1127,7 @@ public class Opciones extends javax.swing.JFrame {
             }
         });
         jPanel11.add(telCli);
-        telCli.setBounds(110, 70, 160, 20);
+        telCli.setBounds(110, 70, 160, 19);
 
         cedulaCli.addKeyListener(new java.awt.event.KeyAdapter() {
             public void keyTyped(java.awt.event.KeyEvent evt) {
@@ -1134,7 +1135,7 @@ public class Opciones extends javax.swing.JFrame {
             }
         });
         jPanel11.add(cedulaCli);
-        cedulaCli.setBounds(110, 40, 160, 20);
+        cedulaCli.setBounds(110, 40, 160, 19);
 
         jLabel32.setFont(new java.awt.Font("Times New Roman", 1, 12)); // NOI18N
         jLabel32.setText("Telefono:");
@@ -1162,7 +1163,7 @@ public class Opciones extends javax.swing.JFrame {
             }
         });
         jPanel11.add(nombreCli);
-        nombreCli.setBounds(110, 10, 160, 20);
+        nombreCli.setBounds(110, 10, 160, 19);
 
         jPanel10.add(jPanel11);
         jPanel11.setBounds(50, 120, 310, 110);
@@ -1186,7 +1187,7 @@ public class Opciones extends javax.swing.JFrame {
         infoFact.setBounds(340, 290, 110, 30);
 
         fac.setFont(new java.awt.Font("Times New Roman", 1, 18)); // NOI18N
-        fac.setText("RESTAURANTE PITAKS");
+        fac.setText("RESTAURANTE EL DRAGÓN FELIZ");
         jPanel10.add(fac);
         fac.setBounds(50, 10, 340, 80);
 
@@ -1232,7 +1233,7 @@ public class Opciones extends javax.swing.JFrame {
         jLabel33.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel33.setText("HORARIO DE ATENCION");
         jPanel10.add(jLabel33);
-        jLabel33.setBounds(100, 490, 170, 21);
+        jLabel33.setBounds(100, 490, 170, 19);
 
         jLabel16.setFont(new java.awt.Font("Courier New", 0, 12)); // NOI18N
         jLabel16.setText("+PROPINA");
@@ -1289,7 +1290,6 @@ public class Opciones extends javax.swing.JFrame {
 
         jButton13.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Img/bars-chart.png"))); // NOI18N
         jButton13.setContentAreaFilled(false);
-        jButton13.setRolloverEnabled(false);
         jButton13.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton13ActionPerformed(evt);
@@ -1316,7 +1316,7 @@ public class Opciones extends javax.swing.JFrame {
             }
         });
         jPanel5.add(jButton18);
-        jButton18.setBounds(350, 240, 97, 80);
+        jButton18.setBounds(350, 240, 98, 80);
 
         jButton20.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
         jButton20.setForeground(new java.awt.Color(255, 255, 255));
@@ -1457,7 +1457,7 @@ public class Opciones extends javax.swing.JFrame {
 
         jLabel3.setFont(new java.awt.Font("Times New Roman", 1, 18)); // NOI18N
         jLabel3.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel3.setText("RESUMEN DE VENTAS pitaks");
+        jLabel3.setText("RESUMEN DE VENTAS");
         jPanel14.add(jLabel3);
         jLabel3.setBounds(40, 40, 270, 22);
 
@@ -1831,11 +1831,6 @@ int contador = 0;
 
 
     }//GEN-LAST:event_bebidaCantActionPerformed
-
-    private void verEstadisticasActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_verEstadisticasActionPerformed
-        Estadisticas.setVisible(true);
-        Estadisticas.setLocationRelativeTo(null);
-    }//GEN-LAST:event_verEstadisticasActionPerformed
 
     private void verCocinaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_verCocinaActionPerformed
 
@@ -2314,7 +2309,7 @@ int contador = 0;
         }
 
         if (mesaFact.getText().equals("")) {
-            JOptionPane.showMessageDialog(null, "No ha ingresa numero de mesa para generar factura.");
+            JOptionPane.showMessageDialog(null, "No ha ingresado el número de mesa para generar factura.");
         }
     }//GEN-LAST:event_generateActionPerformed
 
@@ -2425,7 +2420,7 @@ int contador = 0;
 
 
     private void jButton21ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton21ActionPerformed
-        JOptionPane.showMessageDialog(null, "En el dia de hoy se realizaron" + contador + " ventas. De un total de: " + suma, "PITAKS", JOptionPane.INFORMATION_MESSAGE);
+        JOptionPane.showMessageDialog(null, "En el dia de hoy se realizaron " + contador + " ventas. De un total de: " + suma, "DRAGÓN FELIZ", JOptionPane.INFORMATION_MESSAGE);
     }//GEN-LAST:event_jButton21ActionPerformed
 
     private void jButton22ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton22ActionPerformed
@@ -2561,7 +2556,7 @@ int contador = 0;
             }
         }
         if (max == 0) {
-            JOptionPane.showMessageDialog(null, "No existe ningun maximo.");
+            JOptionPane.showMessageDialog(null, "No existe ningún máximo.");
         }
 
 
@@ -2673,6 +2668,11 @@ int contador = 0;
     private void pitaGriegaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_pitaGriegaActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_pitaGriegaActionPerformed
+
+    private void verEstadisticasActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_verEstadisticasActionPerformed
+        Estadisticas.setVisible(true);
+        Estadisticas.setLocationRelativeTo(null);
+    }//GEN-LAST:event_verEstadisticasActionPerformed
 
     /**
      * @param args the command line arguments
