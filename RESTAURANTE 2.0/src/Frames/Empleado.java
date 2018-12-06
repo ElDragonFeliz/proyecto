@@ -21,7 +21,7 @@ public class Empleado extends javax.swing.JFrame {
     File archivo;
     private BufferedWriter bw;
     Thread cronometro;
-
+    
     public Empleado() {
         //HILO CRONOMETRO
         this.cronometro = new Thread() {
@@ -356,8 +356,6 @@ public class Empleado extends javax.swing.JFrame {
         nombrePlato5 = new javax.swing.JLabel();
         jPanel1 = new javax.swing.JPanel();
         verMenu = new javax.swing.JButton();
-        doPedido = new javax.swing.JButton();
-        infoMeseros = new javax.swing.JButton();
         jButton12 = new javax.swing.JButton();
         pagos = new javax.swing.JButton();
         jLabel9 = new javax.swing.JLabel();
@@ -1563,7 +1561,7 @@ public class Empleado extends javax.swing.JFrame {
         jPanel1.setMaximumSize(new java.awt.Dimension(540, 411));
         jPanel1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        verMenu.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Img/menu.png"))); // NOI18N
+        verMenu.setIcon(new javax.swing.ImageIcon("C:\\Users\\CRASH\\Documents\\GitHub\\proyecto\\RESTAURANTE 2.0\\src\\Img\\Iconos\\wine-menu.png")); // NOI18N
         verMenu.setContentAreaFilled(false);
         verMenu.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         verMenu.addMouseMotionListener(new java.awt.event.MouseMotionAdapter() {
@@ -1576,37 +1574,7 @@ public class Empleado extends javax.swing.JFrame {
                 verMenuActionPerformed(evt);
             }
         });
-        jPanel1.add(verMenu, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 40, 140, 140));
-
-        doPedido.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Img/notas.png"))); // NOI18N
-        doPedido.setContentAreaFilled(false);
-        doPedido.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-        doPedido.addMouseMotionListener(new java.awt.event.MouseMotionAdapter() {
-            public void mouseMoved(java.awt.event.MouseEvent evt) {
-                doPedidoMouseMoved(evt);
-            }
-        });
-        doPedido.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                doPedidoActionPerformed(evt);
-            }
-        });
-        jPanel1.add(doPedido, new org.netbeans.lib.awtextra.AbsoluteConstraints(360, 40, 150, 140));
-
-        infoMeseros.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Img/anillo.png"))); // NOI18N
-        infoMeseros.setContentAreaFilled(false);
-        infoMeseros.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-        infoMeseros.addMouseMotionListener(new java.awt.event.MouseMotionAdapter() {
-            public void mouseMoved(java.awt.event.MouseEvent evt) {
-                infoMeserosMouseMoved(evt);
-            }
-        });
-        infoMeseros.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                infoMeserosActionPerformed(evt);
-            }
-        });
-        jPanel1.add(infoMeseros, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 190, 140, 140));
+        jPanel1.add(verMenu, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 120, 140, 140));
 
         jButton12.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Img/exit.png"))); // NOI18N
         jButton12.setContentAreaFilled(false);
@@ -1618,7 +1586,7 @@ public class Empleado extends javax.swing.JFrame {
         });
         jPanel1.add(jButton12, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 340, 60, 50));
 
-        pagos.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Img/dinero.png"))); // NOI18N
+        pagos.setIcon(new javax.swing.ImageIcon("C:\\Users\\CRASH\\Documents\\GitHub\\proyecto\\RESTAURANTE 2.0\\src\\Img\\Iconos\\marketing.png")); // NOI18N
         pagos.setContentAreaFilled(false);
         pagos.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         pagos.addMouseMotionListener(new java.awt.event.MouseMotionAdapter() {
@@ -1631,7 +1599,7 @@ public class Empleado extends javax.swing.JFrame {
                 pagosActionPerformed(evt);
             }
         });
-        jPanel1.add(pagos, new org.netbeans.lib.awtextra.AbsoluteConstraints(360, 190, 150, 140));
+        jPanel1.add(pagos, new org.netbeans.lib.awtextra.AbsoluteConstraints(320, 120, 150, 140));
 
         jLabel9.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Img/JE_opt (3).jpg"))); // NOI18N
         jPanel1.add(jLabel9, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 540, 420));
@@ -2581,25 +2549,6 @@ int contador = 0;
         vp.passwordUser.setText("");
     }//GEN-LAST:event_jButton12ActionPerformed
 
-    private void infoMeserosActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_infoMeserosActionPerformed
-        Mesero.setVisible(true);
-        this.dispose();
-        Mesero.setLocationRelativeTo(null);
-    }//GEN-LAST:event_infoMeserosActionPerformed
-
-    private void infoMeserosMouseMoved(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_infoMeserosMouseMoved
-        infoMeseros.setToolTipText("*ACCEDER INFORMACION DE MESEROS");
-    }//GEN-LAST:event_infoMeserosMouseMoved
-
-    private void doPedidoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_doPedidoActionPerformed
-        Pedido.setVisible(true);
-        Pedido.setLocationRelativeTo(null);
-    }//GEN-LAST:event_doPedidoActionPerformed
-
-    private void doPedidoMouseMoved(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_doPedidoMouseMoved
-        doPedido.setToolTipText("*INGRESO DE PEDIDOS");
-    }//GEN-LAST:event_doPedidoMouseMoved
-
     private void verMenuActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_verMenuActionPerformed
         Menu.setVisible(true);
         Menu.setLocationRelativeTo(null);
@@ -2669,7 +2618,6 @@ int contador = 0;
     private javax.swing.JTable datosTable;
     private javax.swing.JTable datosTable2;
     private javax.swing.JLabel dblanca;
-    private javax.swing.JButton doPedido;
     private javax.swing.JDialog emergente;
     private javax.swing.JLabel fac;
     private javax.swing.JTable factTable;
@@ -2682,7 +2630,6 @@ int contador = 0;
     private javax.swing.JLabel horario;
     private javax.swing.JLabel imgSexi;
     private javax.swing.JLabel infoFact;
-    private javax.swing.JButton infoMeseros;
     private javax.swing.JButton jButton1;
     private javax.swing.JButton jButton10;
     private javax.swing.JButton jButton11;
