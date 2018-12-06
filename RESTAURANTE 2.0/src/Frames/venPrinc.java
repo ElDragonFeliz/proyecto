@@ -106,39 +106,45 @@ public class venPrinc extends javax.swing.JFrame {
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
         String nom = idUser.getText();
         String pass = passwordUser.getText();
+        boolean bandera;
 
         if ((nom.equals("Administrador")) && (pass.equals("admin"))) {
             nombreA = "Administrador";
-            Opciones op = new Opciones();
+            bandera = true;
+            Empleado op = new Empleado();
             op.setTitle("Restaurante El Dragón Feliz");
             op.setVisible(true);
             op.setLocationRelativeTo(null);
             this.dispose();
 
-            op.verCocina.setEnabled(true);
-        } else if ((nom.equals("JesusF")) && (pass.equals("jesus"))) {
-            nombreA = "JesusF";
-            Opciones op = new Opciones();
+            //op.verCocina.setEnabled(true);
+        } else if ((nom.equals("Erick")) && (pass.equals("123"))) {
+            nombreA = "Erick";
+            bandera = false;
+            Opciones op = new Opciones(bandera);
             op.setVisible(true);
             op.setLocationRelativeTo(null);
             this.dispose();
-        } else if ((nom.equals("MiguelJ")) && (pass.equals("migue"))) {
-            nombreA = "MiguelJ";
-            Opciones op = new Opciones();
+        } else if ((nom.equals("Alberto")) && (pass.equals("123"))) {
+            nombreA = "Alberto";
+            bandera = false;
+            Opciones op = new Opciones(bandera);
             op.setVisible(true);
             op.setLocationRelativeTo(null);
             this.dispose();
             op.verCocina.setEnabled(false);
         } else if ((nom.equals("AugustoS")) && (pass.equals("augus"))) {
             nombreA = "AugustoS";
-            Opciones op = new Opciones();
+            bandera = false;
+            Opciones op = new Opciones(bandera);
             op.setVisible(true);
             op.setLocationRelativeTo(null);
             this.dispose();
             op.verCocina.setEnabled(false);
         } else if ((nom.equals("MarleneD")) && (pass.equals("marle"))) {
                 nombreA = "MarleneD";
-                Opciones op = new Opciones();
+                bandera = false;
+                Opciones op = new Opciones(bandera);
                 op.setVisible(true);
                 op.setLocationRelativeTo(null);
                 this.dispose();
