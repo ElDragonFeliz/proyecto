@@ -21,6 +21,8 @@ public class Empleado extends javax.swing.JFrame {
     File archivo;
     private BufferedWriter bw;
     Thread cronometro;
+    String [] producto = new String [1];
+    int [] precio = new int [1];
     
     public Empleado() {
         //HILO CRONOMETRO
@@ -991,6 +993,10 @@ public class Empleado extends javax.swing.JFrame {
         generaFact.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         generaFact.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
+		
+		System.out.println("Hola Mundo");
+		System.out.println(producto[0]);
+		System.out.println(precio[0]);
                 generaFactActionPerformed(evt);
             }
         });
