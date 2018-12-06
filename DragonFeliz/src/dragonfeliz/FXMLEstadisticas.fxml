@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="338.0" prefWidth="390.0" style="-fx-background-color: black&#10;" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="dragonfeliz.FXMLAdministradorController">
+  <children>
+    <Button layoutX="43.0" layoutY="55.0" mnemonicParsing="false" prefHeight="48.0" prefWidth="226.0" style="-fx-background-color: transparent;&#10;-fx-border-color: white;" text="Ventas por Mesa" textFill="WHITE">
+      <font>
+        <Font name="Arial Black" size="15.0" fx:id="x1" />
+      </font>
+    </Button>
+    <Button font="$x1" layoutX="43.0" layoutY="128.0" mnemonicParsing="false" prefHeight="48.0" prefWidth="226.0" style="-fx-background-color: transparent;&#10;-fx-border-color: white;" text="No. Ventas Realizadas" textFill="WHITE" />
+    <Button font="$x1" layoutX="43.0" layoutY="200.0" mnemonicParsing="false" prefHeight="48.0" prefWidth="226.0" style="-fx-background-color: transparent;&#10;-fx-border-color: white;" text="Plato mas vendido" textFill="WHITE" />
+    <ImageView fitHeight="48.0" fitWidth="64.0" layoutX="295.0" layoutY="55.0" pickOnBounds="true" preserveRatio="true">
+      <image>
+        <Image url="@../img/Iconos%20btn/bars-chart.png" />
+      </image>
+    </ImageView>
+    <ImageView fitHeight="48.0" fitWidth="64.0" layoutX="295.0" layoutY="128.0" pickOnBounds="true" preserveRatio="true">
+      <image>
+        <Image url="@../img/Iconos%20btn/line-chart.png" />
+      </image>
+    </ImageView>
+    <ImageView fitHeight="48.0" fitWidth="64.0" layoutX="295.0" layoutY="200.0" pickOnBounds="true" preserveRatio="true">
+      <image>
+        <Image url="@../img/Iconos%20btn/medal.png" />
+      </image>
+    </ImageView>
+  </children>
+</AnchorPane>

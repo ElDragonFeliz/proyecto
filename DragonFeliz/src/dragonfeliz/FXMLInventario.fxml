@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: black;&#10;" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="dragonfeliz.FXMLAdministradorController">
+  <children>
+    <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#cc0000" height="57.0" layoutX="0.0" layoutY="0.0" stroke="BLACK" strokeType="INSIDE" width="600.0" />
+    <Label layoutX="30.0" layoutY="75.0" text="Archivo:" textFill="#dfdfdf">
+      <font>
+        <Font name="Arial Rounded MT Bold" size="15.0" fx:id="x1" />
+      </font>
+    </Label>
+    <TextField layoutX="109.0" layoutY="75.0" prefWidth="200.0" style="" />
+    <TableView layoutX="30.0" layoutY="122.0" prefHeight="216.0" prefWidth="279.0">
+      <columns>
+        <TableColumn maxWidth="5000.0" minWidth="10.0" prefWidth="165.0" style="-fx-background-color: transparent;" text="Ingrediente" />
+        <TableColumn maxWidth="5000.0" minWidth="10.0" prefWidth="112.0" style="-fx-background-color: #bfbfbf" text="Cantidad" />
+      </columns>
+    </TableView>
+    <Button alignment="BOTTOM_CENTER" contentDisplay="LEFT" font="$x1" layoutX="338.0" layoutY="122.0" mnemonicParsing="false" prefHeight="51.0" prefWidth="232.0" style="" text="Ingredientes" textAlignment="CENTER" textFill="BLACK">
+      <graphic>
+        <ImageView fitHeight="47.5" fitWidth="63.33333333333333" pickOnBounds="true" preserveRatio="true">
+          <image>
+            <Image url="@../img/Iconos%20btn/AÑADIR%20PROD.png" />
+          </image>
+        </ImageView>
+      </graphic>
+    </Button>
+    <Button font="$x1" layoutX="338.0" layoutY="200.0" mnemonicParsing="false" prefHeight="57.0" prefWidth="232.0" style="" text="Agregar" textFill="BLACK">
+      <graphic>
+        <ImageView fitHeight="47.5" fitWidth="63.33333333333333" pickOnBounds="true" preserveRatio="true">
+          <image>
+            <Image url="@../img/Iconos%20btn/VER%20PROD.png" />
+          </image>
+        </ImageView>
+      </graphic>
+    </Button>
+    <Button font="$x1" layoutX="338.0" layoutY="283.0" mnemonicParsing="false" prefHeight="55.0" prefWidth="232.0" style="" text="Eliminar" textFill="BLACK">
+      <graphic>
+        <ImageView fitHeight="47.5" fitWidth="63.33333333333333" pickOnBounds="true" preserveRatio="true">
+          <image>
+            <Image url="@../img/Iconos%20btn/MODIF%20PROD.png" />
+          </image>
+        </ImageView>
+      </graphic>
+    </Button>
+    <Text fill="WHITE" layoutX="254.0" layoutY="36.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Inventario">
+      <font>
+        <Font name="Berlin Sans FB Demi Bold" size="20.0" />
+      </font>
+    </Text>
+  </children>
+</AnchorPane>

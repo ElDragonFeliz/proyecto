@@ -33,85 +33,58 @@ import javafx.stage.Stage;
 public class FXMLAdministradorController implements Initializable {
 
     @FXML
-    private Pane P_Opcion1, P_Modificar;
-
-    @FXML
-    private Button btn_Admin;
-
-    @FXML
-    private Button btn_Cancelar;
-
-    @FXML
-    private Button btn_Empleados;
+    private Button btn_Estadisticas;
 
     @FXML
     private Button btn_Inventario;
 
     @FXML
-    private Button btn_Listo;
-
-    @FXML
-    private Button btn_Modificar;
-
-    @FXML
-    private Button btn_Reporte;
-
-    @FXML
     private Button btn_Salir;
 
     @FXML
-    private Button btn_VentasDia;
+    void OnAction_Estadisticas(ActionEvent event) throws IOException {
+        FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("FXMLEstadisticas.fxml"));
+        Parent root1 = (Parent) fxmlLoader.load();
+        Stage stage = new Stage();
+        stage.setScene(new Scene(root1));
+        stage.setResizable(false);
+        stage.setTitle("Restaurant - El Dragon Feliz - Estadisticas");
+
+        stage.show();
+    }
 
     @FXML
-    private Text t_Modifica;
+    void OnAction_Inventario(ActionEvent event) throws IOException {
+        FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("FXMLInventario.fxml"));
+        Parent root1 = (Parent) fxmlLoader.load();
+        Stage stage = new Stage();
+        stage.setScene(new Scene(root1));
+        stage.setResizable(false);
+        stage.setTitle("Restaurant - El Dragon Feliz - Inventario");
+
+        stage.show();
+    }
 
     @FXML
-    private Text t_Modificar;
-
-    @FXML
-    private TextArea ta_VentaDia;
-
-    @FXML
-    private TextField tf_ModificarPass;
-
-    @FXML
-    private TextField tf_ModificarUser;
-    
-     @FXML
     void OnAction_Salir(ActionEvent event) {
         Stage stage = new Stage();
-            stage = (Stage) (((Node) event.getSource()).getScene().getWindow());
-            stage.close();
-            Parent root = null;
-            try {
-                root = FXMLLoader.load(getClass().getResource("FXMLDocument.fxml"));
-            } catch (IOException ex) {
-                    Logger.getLogger(FXMLDocumentController.class.getName()).log(Level.SEVERE, null, ex);
-            }
-            Scene scene = new Scene(root);
-            stage.setScene(scene);
-            stage.setTitle("Restaurant - El Dragon Feliz - Login");
-            stage.show();
-    }
-    
-
-
-    @FXML
-    void OnAction_Inventario(ActionEvent event) {
-    }
-    
-
-    @FXML
-    void OnAction_Reportes(ActionEvent event) {
+        stage = (Stage) (((Node) event.getSource()).getScene().getWindow());
+        stage.close();
+        Parent root = null;
+        try {
+            root = FXMLLoader.load(getClass().getResource("FXMLDocument.fxml"));
+        } catch (IOException ex) {
+            Logger.getLogger(FXMLDocumentController.class.getName()).log(Level.SEVERE, null, ex);
+        }
+        Scene scene = new Scene(root);
+        stage.setScene(scene);
+        stage.setTitle("Restaurant - El Dragon Feliz - Login");
+        stage.show();
     }
 
-    @FXML
-    void OnAction_VentasDia(ActionEvent event) {
-    }
-    
     @Override
     public void initialize(URL url, ResourceBundle rb) {
         // TODO
-    }    
-    
+    }
+
 }
