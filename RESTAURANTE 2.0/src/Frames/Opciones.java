@@ -22,9 +22,11 @@ public class Opciones extends javax.swing.JFrame {
     File archivo;
     private BufferedWriter bw;
     Thread cronometro;
+    boolean flag;
     
-    public Opciones() {
+    public Opciones(boolean bandera) {
         //HILO CRONOMETRO
+        this.flag = bandera;
         this.cronometro = new Thread() {
             @Override
             public void run() {
@@ -2670,7 +2672,7 @@ int contador = 0;
     }//GEN-LAST:event_pitaGriegaActionPerformed
 
     private void verEstadisticasActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_verEstadisticasActionPerformed
-        Estadisticas.setVisible(true);
+        Estadisticas.setVisible(this.flag);
         Estadisticas.setLocationRelativeTo(null);
     }//GEN-LAST:event_verEstadisticasActionPerformed
 
@@ -2704,7 +2706,6 @@ int contador = 0;
         java.awt.EventQueue.invokeLater(new Runnable() {
             @Override
             public void run() {
-                new Opciones().setVisible(true);
             }
         });
     }
