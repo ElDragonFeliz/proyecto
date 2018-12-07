@@ -78,7 +78,7 @@ public class Opciones extends javax.swing.JFrame {
         Cocina.setTitle("Restaurante El Dragón Feliz");
         Factura.setLocationRelativeTo(null);
         Factura.setTitle("Restaurante El Dragón Feliz");
-        infoMeseros.setVisible(false);
+        //infoMeseros.setVisible(false);
         
 
         //ESCRITURA DE PARRAFO EN UN LABEL
@@ -363,16 +363,12 @@ public class Opciones extends javax.swing.JFrame {
         nombrePlato4 = new javax.swing.JLabel();
         nombrePlato5 = new javax.swing.JLabel();
         jPanel1 = new javax.swing.JPanel();
-        verMenu = new javax.swing.JButton();
-        doPedido = new javax.swing.JButton();
         verCocina = new javax.swing.JButton();
         verEstadisticas = new javax.swing.JButton();
-        infoMeseros = new javax.swing.JButton();
         jButton12 = new javax.swing.JButton();
-        pagos = new javax.swing.JButton();
         jLabel9 = new javax.swing.JLabel();
 
-        Menu.setTitle("MENU EL DRAGÓN FELIZ");
+        Menu.setTitle("MENU DRAGONFELIZ");
         Menu.setMinimumSize(new java.awt.Dimension(850, 611));
         Menu.setResizable(false);
 
@@ -848,7 +844,7 @@ public class Opciones extends javax.swing.JFrame {
 
         jLabel23.setFont(new java.awt.Font("Times New Roman", 1, 48)); // NOI18N
         jLabel23.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel23.setText("EL DRAGÓN FELIZ ");
+        jLabel23.setText("PITAKS ");
         jPanel3.add(jLabel23, new org.netbeans.lib.awtextra.AbsoluteConstraints(470, 40, 240, -1));
 
         numMeserito.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
@@ -1189,7 +1185,7 @@ public class Opciones extends javax.swing.JFrame {
         infoFact.setBounds(340, 290, 110, 30);
 
         fac.setFont(new java.awt.Font("Times New Roman", 1, 18)); // NOI18N
-        fac.setText("RESTAURANTE EL DRAGÓN FELIZ");
+        fac.setText("RESTAURANTE PITAKS");
         jPanel10.add(fac);
         fac.setBounds(50, 10, 340, 80);
 
@@ -1459,7 +1455,7 @@ public class Opciones extends javax.swing.JFrame {
 
         jLabel3.setFont(new java.awt.Font("Times New Roman", 1, 18)); // NOI18N
         jLabel3.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel3.setText("RESUMEN DE VENTAS");
+        jLabel3.setText("RESUMEN DE VENTAS Dragon Feliz");
         jPanel14.add(jLabel3);
         jLabel3.setBounds(40, 40, 270, 22);
 
@@ -1573,38 +1569,8 @@ public class Opciones extends javax.swing.JFrame {
         jPanel1.setMaximumSize(new java.awt.Dimension(540, 411));
         jPanel1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        verMenu.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Img/menu.png"))); // NOI18N
-        verMenu.setContentAreaFilled(false);
-        verMenu.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-        verMenu.addMouseMotionListener(new java.awt.event.MouseMotionAdapter() {
-            public void mouseMoved(java.awt.event.MouseEvent evt) {
-                verMenuMouseMoved(evt);
-            }
-        });
-        verMenu.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                verMenuActionPerformed(evt);
-            }
-        });
-        jPanel1.add(verMenu, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 40, 140, 140));
-
-        doPedido.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Img/notas.png"))); // NOI18N
-        doPedido.setContentAreaFilled(false);
-        doPedido.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-        doPedido.addMouseMotionListener(new java.awt.event.MouseMotionAdapter() {
-            public void mouseMoved(java.awt.event.MouseEvent evt) {
-                doPedidoMouseMoved(evt);
-            }
-        });
-        doPedido.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                doPedidoActionPerformed(evt);
-            }
-        });
-        jPanel1.add(doPedido, new org.netbeans.lib.awtextra.AbsoluteConstraints(360, 40, 150, 140));
-
         verCocina.setForeground(new java.awt.Color(204, 204, 204));
-        verCocina.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Img/cocinero.png"))); // NOI18N
+        verCocina.setIcon(new javax.swing.ImageIcon("C:\\Users\\CRASH\\Documents\\GitHub\\proyecto\\RESTAURANTE 2.0\\src\\Img\\Iconos\\checklist.png")); // NOI18N
         verCocina.setBorderPainted(false);
         verCocina.setContentAreaFilled(false);
         verCocina.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
@@ -1618,9 +1584,9 @@ public class Opciones extends javax.swing.JFrame {
                 verCocinaActionPerformed(evt);
             }
         });
-        jPanel1.add(verCocina, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 40, 150, 140));
+        jPanel1.add(verCocina, new org.netbeans.lib.awtextra.AbsoluteConstraints(290, 120, 150, 140));
 
-        verEstadisticas.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Img/estadisticas.png"))); // NOI18N
+        verEstadisticas.setIcon(new javax.swing.ImageIcon("C:\\Users\\CRASH\\Documents\\GitHub\\proyecto\\RESTAURANTE 2.0\\src\\Img\\Iconos\\analytics.png")); // NOI18N
         verEstadisticas.setContentAreaFilled(false);
         verEstadisticas.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         verEstadisticas.addMouseMotionListener(new java.awt.event.MouseMotionAdapter() {
@@ -1633,22 +1599,7 @@ public class Opciones extends javax.swing.JFrame {
                 verEstadisticasActionPerformed(evt);
             }
         });
-        jPanel1.add(verEstadisticas, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 190, 150, 140));
-
-        infoMeseros.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Img/anillo.png"))); // NOI18N
-        infoMeseros.setContentAreaFilled(false);
-        infoMeseros.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-        infoMeseros.addMouseMotionListener(new java.awt.event.MouseMotionAdapter() {
-            public void mouseMoved(java.awt.event.MouseEvent evt) {
-                infoMeserosMouseMoved(evt);
-            }
-        });
-        infoMeseros.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                infoMeserosActionPerformed(evt);
-            }
-        });
-        jPanel1.add(infoMeseros, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 190, 140, 140));
+        jPanel1.add(verEstadisticas, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 120, 150, 140));
 
         jButton12.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Img/exit.png"))); // NOI18N
         jButton12.setContentAreaFilled(false);
@@ -1659,21 +1610,6 @@ public class Opciones extends javax.swing.JFrame {
             }
         });
         jPanel1.add(jButton12, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 340, 60, 50));
-
-        pagos.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Img/dinero.png"))); // NOI18N
-        pagos.setContentAreaFilled(false);
-        pagos.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-        pagos.addMouseMotionListener(new java.awt.event.MouseMotionAdapter() {
-            public void mouseMoved(java.awt.event.MouseEvent evt) {
-                pagosMouseMoved(evt);
-            }
-        });
-        pagos.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                pagosActionPerformed(evt);
-            }
-        });
-        jPanel1.add(pagos, new org.netbeans.lib.awtextra.AbsoluteConstraints(360, 190, 150, 140));
 
         jLabel9.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Img/JE_opt (3).jpg"))); // NOI18N
         jPanel1.add(jLabel9, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 540, 420));
@@ -1694,45 +1630,18 @@ public class Opciones extends javax.swing.JFrame {
 int contador = 0;
     int suma = 0;
     
-    private void verMenuActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_verMenuActionPerformed
-        Menu.setVisible(true);
-        Menu.setLocationRelativeTo(null);
-        this.dispose();
-    }//GEN-LAST:event_verMenuActionPerformed
-
-    private void pagosActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_pagosActionPerformed
-        Factura.setVisible(true);
-        Cocina.dispose();
-    }//GEN-LAST:event_pagosActionPerformed
-
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
         Menu.setVisible(false);
         this.setVisible(true);
     }//GEN-LAST:event_jButton1ActionPerformed
 
-    private void verMenuMouseMoved(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_verMenuMouseMoved
-        verMenu.setToolTipText("*VER MENÚ DE PLATOS");
-    }//GEN-LAST:event_verMenuMouseMoved
-
-    private void doPedidoMouseMoved(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_doPedidoMouseMoved
-        doPedido.setToolTipText("*INGRESO DE PEDIDOS");
-    }//GEN-LAST:event_doPedidoMouseMoved
-
     private void verCocinaMouseMoved(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_verCocinaMouseMoved
         verCocina.setToolTipText("*ACCEDER A COCINA/STOCK");
     }//GEN-LAST:event_verCocinaMouseMoved
 
-    private void infoMeserosMouseMoved(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_infoMeserosMouseMoved
-        infoMeseros.setToolTipText("*ACCEDER INFORMACION DE MESEROS");
-    }//GEN-LAST:event_infoMeserosMouseMoved
-
     private void verEstadisticasMouseMoved(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_verEstadisticasMouseMoved
         verEstadisticas.setToolTipText("*VER ESTADISTICAS");
     }//GEN-LAST:event_verEstadisticasMouseMoved
-
-    private void pagosMouseMoved(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_pagosMouseMoved
-        pagos.setToolTipText("*REGISTRAR PAGO");
-    }//GEN-LAST:event_pagosMouseMoved
 
 
     private void tiposBebidasActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_tiposBebidasActionPerformed
@@ -1763,11 +1672,6 @@ int contador = 0;
             // TODO
         });
     }
-
-    private void doPedidoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_doPedidoActionPerformed
-        Pedido.setVisible(true);
-        Pedido.setLocationRelativeTo(null);
-    }//GEN-LAST:event_doPedidoActionPerformed
 
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
         //AÑADIMOS PLATOS PEDIDOS EN MENU A TABLA DE PEDIDO        
@@ -1844,12 +1748,6 @@ int contador = 0;
         this.dispose();
         StockIngredientes.setLocationRelativeTo(null);
     }//GEN-LAST:event_verCocinaActionPerformed
-
-    private void infoMeserosActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_infoMeserosActionPerformed
-        Mesero.setVisible(true);
-        this.dispose();
-        Mesero.setLocationRelativeTo(null);
-    }//GEN-LAST:event_infoMeserosActionPerformed
 
     private void jButton7ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton7ActionPerformed
         Pedido.setVisible(false);
@@ -2735,7 +2633,6 @@ int contador = 0;
     private javax.swing.JTable datosTable;
     private javax.swing.JTable datosTable2;
     private javax.swing.JLabel dblanca;
-    private javax.swing.JButton doPedido;
     private javax.swing.JDialog emergente;
     private javax.swing.JLabel fac;
     private javax.swing.JTable factTable;
@@ -2748,7 +2645,6 @@ int contador = 0;
     private javax.swing.JLabel horario;
     private javax.swing.JLabel imgSexi;
     private javax.swing.JLabel infoFact;
-    private javax.swing.JButton infoMeseros;
     private javax.swing.JButton jButton1;
     private javax.swing.JButton jButton10;
     private javax.swing.JButton jButton11;
@@ -2852,7 +2748,6 @@ int contador = 0;
     private javax.swing.JLabel numMesa2;
     private javax.swing.JComboBox<String> numMeserito;
     private javax.swing.JComboBox<String> numMesero;
-    private javax.swing.JButton pagos;
     private javax.swing.JLabel pgriega;
     private javax.swing.JComboBox<String> pitaGriega;
     private javax.swing.JComboBox<String> pitaOpera;
@@ -2864,6 +2759,5 @@ int contador = 0;
     private javax.swing.JComboBox<String> tiposBebidas;
     public javax.swing.JButton verCocina;
     public javax.swing.JButton verEstadisticas;
-    private javax.swing.JButton verMenu;
     // End of variables declaration//GEN-END:variables
 }

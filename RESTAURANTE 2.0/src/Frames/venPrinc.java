@@ -107,49 +107,33 @@ public class venPrinc extends javax.swing.JFrame {
         String nom = idUser.getText();
         String pass = passwordUser.getText();
         boolean bandera;
+        Opciones opciones = new Opciones(true);
 
         if ((nom.equals("Administrador")) && (pass.equals("admin"))) {
             nombreA = "Administrador";
             bandera = true;
-            Empleado op = new Empleado();
+            Opciones op = new Opciones(true);
             op.setTitle("Restaurante El Dragón Feliz");
             op.setVisible(true);
             op.setLocationRelativeTo(null);
             this.dispose();
 
-            //op.verCocina.setEnabled(true);
+            op.verCocina.setEnabled(true);
         } else if ((nom.equals("Erick")) && (pass.equals("123"))) {
             nombreA = "Erick";
             bandera = false;
-            Opciones op = new Opciones(bandera);
+            Empleado op = new Empleado();
             op.setVisible(true);
             op.setLocationRelativeTo(null);
             this.dispose();
         } else if ((nom.equals("Alberto")) && (pass.equals("123"))) {
             nombreA = "Alberto";
             bandera = false;
-            Opciones op = new Opciones(bandera);
+            Empleado op = new Empleado();
             op.setVisible(true);
             op.setLocationRelativeTo(null);
             this.dispose();
-            op.verCocina.setEnabled(false);
-        } else if ((nom.equals("AugustoS")) && (pass.equals("augus"))) {
-            nombreA = "AugustoS";
-            bandera = false;
-            Opciones op = new Opciones(bandera);
-            op.setVisible(true);
-            op.setLocationRelativeTo(null);
-            this.dispose();
-            op.verCocina.setEnabled(false);
-        } else if ((nom.equals("MarleneD")) && (pass.equals("marle"))) {
-                nombreA = "MarleneD";
-                bandera = false;
-                Opciones op = new Opciones(bandera);
-                op.setVisible(true);
-                op.setLocationRelativeTo(null);
-                this.dispose();
-                op.verCocina.setEnabled(false);
-          
+            //op.verCocina.setEnabled(false);
         } else {
                 JOptionPane.showMessageDialog(null, "Datos incorrectos, verifique nuevamente.");
             }
