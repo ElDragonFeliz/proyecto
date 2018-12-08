@@ -20,7 +20,11 @@ import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.control.CheckBox;
 import javafx.scene.control.ComboBox;
+<<<<<<< HEAD
+import javafx.scene.control.TextField;
+=======
 import javafx.scene.control.TableColumn;
+>>>>>>> c10b58b2b0592e49a5ca196fe3e0f5958ab2776c
 import javafx.scene.image.ImageView;
 import javafx.stage.Stage;
 
@@ -31,6 +35,9 @@ import javafx.stage.Stage;
  */
 public class FXMLVentasController {
 
+    int contador = 0;
+    boolean bandera = false;
+    
     @FXML
     private Button btn_Add, btn_Pay, btn_return;
 
@@ -56,6 +63,9 @@ public class FXMLVentasController {
     private TableColumn<?, ?> tc_Precio;
 
     @FXML
+    private TextField tf_1, tf_2, tf_3, tf_4, tf_5;
+    
+    @FXML
     void OnAction_Pay(ActionEvent event) {
         Stage stage = new Stage();
 
@@ -71,6 +81,63 @@ public class FXMLVentasController {
         stage.setScene(scene);
         stage.setTitle("Restaurant - El Dragon Feliz - Ticket");
         stage.show();
+    }
+    
+    @FXML
+    void ac_ajies(ActionEvent event) {
+        if (cb_Ajies.isSelected()==true) {
+            this.contador++;
+            System.out.println("Contador: " + contador);
+        } else {
+            this.contador--;
+            System.out.println("Contador: " + contador);
+        }
+        
+        
+    }
+
+    @FXML
+    void ac_apio(ActionEvent event) {
+        if (cb_Apio.isSelected()==true) {
+            this.contador++;
+            System.out.println("Contador: " + contador);
+        } else {
+            this.contador--;
+            System.out.println("Contador: " + contador);
+        }
+    }
+
+    @FXML
+    void ac_brocoli(ActionEvent event) {
+        if (cb_Brocoli.isSelected()==true) {
+            this.contador++;
+            System.out.println("Contador: " + contador);
+        } else {
+            this.contador--;
+            System.out.println("Contador: " + contador);
+        }
+    }
+
+    @FXML
+    void ac_cebolla(ActionEvent event) {
+        if (cb_cebolla.isSelected()==true) {
+            this.contador++;
+            System.out.println("Contador: " + contador);
+        } else {
+            this.contador--;
+            System.out.println("Contador: " + contador);
+        }
+    }
+
+    @FXML
+    void ac_papa(ActionEvent event) {
+        if (cb_Papa.isSelected()==true) {
+            this.contador++;
+            System.out.println("Contador: " + contador);
+        } else {
+            this.contador--;
+            System.out.println("Contador: " + contador);
+        }
     }
 
     @FXML
@@ -125,7 +192,7 @@ public class FXMLVentasController {
 
     @FXML
     void initialize() {
-
+        
     }
 
     
