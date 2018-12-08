@@ -20,11 +20,8 @@ import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.control.CheckBox;
 import javafx.scene.control.ComboBox;
-<<<<<<< HEAD
 import javafx.scene.control.TextField;
-=======
 import javafx.scene.control.TableColumn;
->>>>>>> c10b58b2b0592e49a5ca196fe3e0f5958ab2776c
 import javafx.scene.image.ImageView;
 import javafx.stage.Stage;
 
@@ -88,9 +85,35 @@ public class FXMLVentasController {
         if (cb_Ajies.isSelected()==true) {
             this.contador++;
             System.out.println("Contador: " + contador);
+            if(this.contador>=3) {
+                tf_1.setDisable(false);
+                tf_2.setDisable(false);
+                tf_3.setDisable(false);
+                tf_4.setDisable(false);
+                tf_5.setDisable(false);
+            } else if (this.contador <= 3) {
+                tf_1.setDisable(true);
+                tf_2.setDisable(true);
+                tf_3.setDisable(true);
+                tf_4.setDisable(true);
+                tf_5.setDisable(true);
+            }
         } else {
             this.contador--;
             System.out.println("Contador: " + contador);
+                if(this.contador>=3) {
+                tf_1.setDisable(false);
+                tf_2.setDisable(false);
+                tf_3.setDisable(false);
+                tf_4.setDisable(false);
+                tf_5.setDisable(false);
+            } else if (this.contador <= 3) {
+                tf_1.setDisable(true);
+                tf_2.setDisable(true);
+                tf_3.setDisable(true);
+                tf_4.setDisable(true);
+                tf_5.setDisable(true);
+            }
         }
         
         
@@ -101,9 +124,35 @@ public class FXMLVentasController {
         if (cb_Apio.isSelected()==true) {
             this.contador++;
             System.out.println("Contador: " + contador);
+            if(this.contador>=3) {
+                tf_1.setDisable(false);
+                tf_2.setDisable(false);
+                tf_3.setDisable(false);
+                tf_4.setDisable(false);
+                tf_5.setDisable(false);
+            } else if (this.contador <= 3) {
+                tf_1.setDisable(true);
+                tf_2.setDisable(true);
+                tf_3.setDisable(true);
+                tf_4.setDisable(true);
+                tf_5.setDisable(true);
+            }
         } else {
             this.contador--;
             System.out.println("Contador: " + contador);
+            if(this.contador>=3) {
+                tf_1.setDisable(false);
+                tf_2.setDisable(false);
+                tf_3.setDisable(false);
+                tf_4.setDisable(false);
+                tf_5.setDisable(false);
+            } else if (this.contador <= 3) {
+                tf_1.setDisable(true);
+                tf_2.setDisable(true);
+                tf_3.setDisable(true);
+                tf_4.setDisable(true);
+                tf_5.setDisable(true);
+            }
         }
     }
 
@@ -112,9 +161,35 @@ public class FXMLVentasController {
         if (cb_Brocoli.isSelected()==true) {
             this.contador++;
             System.out.println("Contador: " + contador);
+            if(this.contador>=3) {
+                tf_1.setDisable(false);
+                tf_2.setDisable(false);
+                tf_3.setDisable(false);
+                tf_4.setDisable(false);
+                tf_5.setDisable(false);
+            } else if (this.contador <= 3) {
+                tf_1.setDisable(true);
+                tf_2.setDisable(true);
+                tf_3.setDisable(true);
+                tf_4.setDisable(true);
+                tf_5.setDisable(true);
+            }
         } else {
             this.contador--;
             System.out.println("Contador: " + contador);
+            if(this.contador>=3) {
+                tf_1.setDisable(false);
+                tf_2.setDisable(false);
+                tf_3.setDisable(false);
+                tf_4.setDisable(false);
+                tf_5.setDisable(false);
+            } else if (this.contador <= 3) {
+                tf_1.setDisable(true);
+                tf_2.setDisable(true);
+                tf_3.setDisable(true);
+                tf_4.setDisable(true);
+                tf_5.setDisable(true);
+            }
         }
     }
 
@@ -123,9 +198,35 @@ public class FXMLVentasController {
         if (cb_cebolla.isSelected()==true) {
             this.contador++;
             System.out.println("Contador: " + contador);
+            if(this.contador>=3) {
+                tf_1.setDisable(false);
+                tf_2.setDisable(false);
+                tf_3.setDisable(false);
+                tf_4.setDisable(false);
+                tf_5.setDisable(false);
+            } else if (this.contador <= 3) {
+                tf_1.setDisable(true);
+                tf_2.setDisable(true);
+                tf_3.setDisable(true);
+                tf_4.setDisable(true);
+                tf_5.setDisable(true);
+            }
         } else {
             this.contador--;
             System.out.println("Contador: " + contador);
+            if(this.contador>=3) {
+                tf_1.setDisable(false);
+                tf_2.setDisable(false);
+                tf_3.setDisable(false);
+                tf_4.setDisable(false);
+                tf_5.setDisable(false);
+            } else if (this.contador <= 3) {
+                tf_1.setDisable(true);
+                tf_2.setDisable(true);
+                tf_3.setDisable(true);
+                tf_4.setDisable(true);
+                tf_5.setDisable(true);
+            }
         }
     }
 
@@ -134,9 +235,35 @@ public class FXMLVentasController {
         if (cb_Papa.isSelected()==true) {
             this.contador++;
             System.out.println("Contador: " + contador);
+            if(this.contador>=3) {
+                tf_1.setDisable(false);
+                tf_2.setDisable(false);
+                tf_3.setDisable(false);
+                tf_4.setDisable(false);
+                tf_5.setDisable(false);
+            } else if (this.contador <= 3) {
+                tf_1.setDisable(true);
+                tf_2.setDisable(true);
+                tf_3.setDisable(true);
+                tf_4.setDisable(true);
+                tf_5.setDisable(true);
+            }
         } else {
             this.contador--;
             System.out.println("Contador: " + contador);
+            if(this.contador>=3) {
+                tf_1.setDisable(false);
+                tf_2.setDisable(false);
+                tf_3.setDisable(false);
+                tf_4.setDisable(false);
+                tf_5.setDisable(false);
+            } else if (this.contador <= 3) {
+                tf_1.setDisable(true);
+                tf_2.setDisable(true);
+                tf_3.setDisable(true);
+                tf_4.setDisable(true);
+                tf_5.setDisable(true);
+            }
         }
     }
 

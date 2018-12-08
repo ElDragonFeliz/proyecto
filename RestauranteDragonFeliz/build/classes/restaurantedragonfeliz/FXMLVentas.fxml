@@ -32,15 +32,15 @@
                 <Font name="System Bold" size="18.0" fx:id="x1" />
               </font>
             </CheckBox>
-            <CheckBox fx:id="cb_Apio" font="$x1" layoutX="20.0" layoutY="86.0" mnemonicParsing="false" text="Apio" textFill="WHITE" />
-            <CheckBox fx:id="cb_Brocoli" font="$x1" layoutX="20.0" layoutY="120.0" mnemonicParsing="false" text="Brocoli" textFill="WHITE" />
-            <CheckBox fx:id="cb_cebolla" font="$x1" layoutX="20.0" layoutY="153.0" mnemonicParsing="false" text="Cebolla" textFill="WHITE" />
-            <CheckBox fx:id="cb_Papa" font="$x1" layoutX="20.0" layoutY="185.0" mnemonicParsing="false" text="Papa" textFill="WHITE" />
-            <TextField disable="true" layoutX="125.0" layoutY="85.0" prefWidth="54.0" promptText="#" />
-            <TextField disable="true" layoutX="125.0" layoutY="119.0" prefWidth="54.0" promptText="#" text="" />
-            <TextField disable="true" layoutX="125.0" layoutY="152.0" prefWidth="54.0" promptText="#" />
-            <TextField disable="true" layoutX="124.0" layoutY="185.0" prefWidth="54.0" promptText="#" />
-            <TextField disable="true" layoutX="125.0" layoutY="52.0" prefWidth="54.0" promptText="#" />
+            <CheckBox fx:id="cb_Apio" font="$x1" layoutX="20.0" layoutY="86.0" mnemonicParsing="false" onAction="#ac_apio" text="Apio" textFill="WHITE" />
+            <CheckBox fx:id="cb_Brocoli" font="$x1" layoutX="20.0" layoutY="120.0" mnemonicParsing="false" onAction="#ac_brocoli" text="Brocoli" textFill="WHITE" />
+            <CheckBox fx:id="cb_cebolla" font="$x1" layoutX="20.0" layoutY="153.0" mnemonicParsing="false" onAction="#ac_cebolla" text="Cebolla" textFill="WHITE" />
+            <CheckBox fx:id="cb_Papa" font="$x1" layoutX="20.0" layoutY="185.0" mnemonicParsing="false" onAction="#ac_papa" text="Papa" textFill="WHITE" />
+            <TextField fx:id="tf_2" disable="true" layoutX="125.0" layoutY="85.0" prefWidth="54.0" promptText="#" />
+            <TextField fx:id="tf_3" disable="true" layoutX="125.0" layoutY="119.0" prefWidth="54.0" promptText="#" text="" />
+            <TextField fx:id="tf_4" disable="true" layoutX="125.0" layoutY="152.0" prefWidth="54.0" promptText="#" />
+            <TextField fx:id="tf_5" disable="true" layoutX="124.0" layoutY="185.0" prefWidth="54.0" promptText="#" />
+            <TextField fx:id="tf_1" disable="true" layoutX="125.0" layoutY="52.0" prefWidth="54.0" promptText="#" />
           </children>
         </Pane>
         <ImageView fitHeight="676.0508477810163" fitWidth="299.9022521972656" layoutX="28.0" layoutY="-2.0" pickOnBounds="true" preserveRatio="true">
