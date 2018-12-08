@@ -2,10 +2,132 @@
 
 <?import java.lang.*?>
 <?import java.util.*?>
+<?import javafx.collections.*?>
 <?import javafx.scene.*?>
 <?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
 <?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
 
-<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns:fx="http://javafx.com/fxml/1" fx:controller="restaurantedragonfeliz.FXMLVentasController">
-    
+<AnchorPane id="AnchorPane" prefHeight="680.0" prefWidth="1000.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="restaurantedragonfeliz.FXMLVentasController">
+  <children>
+    <Pane layoutX="0.0" layoutY="0.0" prefHeight="680.0" prefWidth="1000.0" style="-fx-background-color: black;">
+      <children>
+        <ImageView fitHeight="559.8856595197766" fitWidth="254.2991943359375" layoutX="704.0" layoutY="1.0" pickOnBounds="true" preserveRatio="true">
+          <image>
+            <Image url="@../img/MenuVentas/menu_fondo2.jpg" />
+          </image>
+        </ImageView>
+        <Pane disable="false" layoutX="741.0" layoutY="236.0" prefHeight="309.69232177734375" prefWidth="187.9998779296875" style="-fx-border-color: #14ff00;">
+          <children>
+            <Label layoutX="52.0" layoutY="14.0" text="Verduras" textFill="WHITE">
+              <font>
+                <Font name="System Bold" size="20.0" fx:id="x2" />
+              </font>
+            </Label>
+            <CheckBox fx:id="cb_Ajies" disable="false" layoutX="21.0" layoutY="51.0" mnemonicParsing="false" text="Ajies" textFill="WHITE">
+              <font>
+                <Font name="System Bold" size="18.0" fx:id="x1" />
+              </font>
+            </CheckBox>
+            <CheckBox fx:id="cb_Apio" font="$x1" layoutX="20.0" layoutY="86.0" mnemonicParsing="false" text="Apio" textFill="WHITE" />
+            <CheckBox fx:id="cb_Brocoli" font="$x1" layoutX="20.0" layoutY="120.0" mnemonicParsing="false" text="Brocoli" textFill="WHITE" />
+            <CheckBox fx:id="cb_cebolla" font="$x1" layoutX="20.0" layoutY="153.0" mnemonicParsing="false" text="Cebolla" textFill="WHITE" />
+            <CheckBox fx:id="cb_Papa" font="$x1" layoutX="20.0" layoutY="185.0" mnemonicParsing="false" text="Papa" textFill="WHITE" />
+            <TextField disable="true" layoutX="125.0" layoutY="85.0" prefWidth="54.0" promptText="#" />
+            <TextField disable="true" layoutX="125.0" layoutY="119.0" prefWidth="54.0" promptText="#" text="" />
+            <TextField disable="true" layoutX="125.0" layoutY="152.0" prefWidth="54.0" promptText="#" />
+            <TextField disable="true" layoutX="124.0" layoutY="185.0" prefWidth="54.0" promptText="#" />
+            <TextField disable="true" layoutX="125.0" layoutY="52.0" prefWidth="54.0" promptText="#" />
+          </children>
+        </Pane>
+        <ImageView fitHeight="676.0508477810163" fitWidth="299.9022521972656" layoutX="28.0" layoutY="-2.0" pickOnBounds="true" preserveRatio="true">
+          <image>
+            <Image url="@../img/MenuVentas/menu_fondo1.jpg" />
+          </image>
+        </ImageView>
+        <ImageView fitHeight="558.6923828125" fitWidth="253.75720991443876" layoutX="392.0" layoutY="1.0" pickOnBounds="true" preserveRatio="true">
+          <image>
+            <Image url="@../img/MenuVentas/menu_fondo2.jpg" />
+          </image>
+        </ImageView>
+        <Button fx:id="btn_return" layoutX="405.0" layoutY="598.0" mnemonicParsing="false" onAction="#OnAction_Return" prefHeight="72.0" prefWidth="108.0" style="-fx-background-color: transparent;&#10;" text="">
+          <graphic>
+            <ImageView fitHeight="54.0" fitWidth="72.00000188122057" mouseTransparent="true" pickOnBounds="true" preserveRatio="true">
+              <image>
+                <Image url="@../img/Img_btn/flecha-hacia-la-izquierda.png" />
+              </image>
+            </ImageView>
+          </graphic>
+        </Button>
+        <Button fx:id="btn_Pay" font="$x2" layoutX="770.0" layoutY="609.0" mnemonicParsing="false" onAction="#OnAction_Pay" prefHeight="54.0" prefWidth="187.9998779296875" style="-fx-background-color: transparent;&#10;-fx-border-color: white;" text="Finalizar Pedido" textFill="WHITE" />
+        <Button fx:id="btn_Add" font="$x2" layoutX="549.0" layoutY="611.0" mnemonicParsing="false" onAction="#On_Action_Add" prefHeight="54.0" prefWidth="187.9998779296875" style="-fx-background-color: transparent;&#10;-fx-border-color: white;" text="Agregar" textFill="WHITE" />
+        <Line endX="100.0" layoutX="896.0" layoutY="586.0" startX="-496.0" startY="-1.0" strokeWidth="7.0">
+          <stroke>
+            <Color blue="0.000" green="1.000" red="0.078" fx:id="x3" />
+          </stroke>
+        </Line>
+        <Line endX="16.0" endY="-20.0" layoutX="383.0" layoutY="607.0" rotate="0.0" startX="17.0" startY="67.0" stroke="$x3" strokeWidth="7.0" />
+        <Line endX="18.0" endY="-17.0" layoutX="497.0" layoutY="607.0" rotate="0.0" startX="18.0" startY="69.0" stroke="$x3" strokeWidth="7.0" />
+        <ImageView id="iv_Base" fx:id="img_Base" fitHeight="102.50009190719709" fitWidth="136.6667938232422" layoutX="457.0" layoutY="76.0" pickOnBounds="true" preserveRatio="true">
+          <image>
+            <Image url="@../img/Platillos/Base/spaghetti.jpg" />
+          </image>
+        </ImageView>
+        <ComboBox layoutX="450.0" layoutY="191.0" prefWidth="150.66678701171622" promptText="Base">
+          <items>
+            <FXCollections fx:factory="observableArrayList">
+              <String fx:value="Arroz $120" />
+              <String fx:value="Fideos $120" />
+            </FXCollections>
+          </items>
+        </ComboBox>
+        <ImageView id="i" fx:id="img_Carnes" fitHeight="102.50009190719709" fitWidth="136.6667938232422" layoutX="456.0" layoutY="243.0" pickOnBounds="true" preserveRatio="true">
+          <image>
+            <Image url="@../img/Platillos/Carnes/albondigas.jpg" />
+          </image>
+        </ImageView>
+        <ComboBox layoutX="449.0" layoutY="346.0" prefWidth="150.66678701171622" promptText="Carnes">
+          <items>
+            <FXCollections fx:factory="observableArrayList">
+              <String fx:value="Albondigas $90" />
+              <String fx:value="Camaron $ 110" />
+              <String fx:value="Res $80" />
+              <String fx:value="Pollo $75" />
+              <String fx:value="Cerdo $65" />
+            </FXCollections>
+          </items>
+        </ComboBox>
+        <ImageView fx:id="img_Salsas" fitHeight="102.50009190719709" fitWidth="136.6667938232422" layoutX="456.0" layoutY="400.0" pickOnBounds="true" preserveRatio="true">
+          <image>
+            <Image url="@../img/Platillos/Salsas/SalsaCiruelas.jpg" />
+          </image>
+        </ImageView>
+        <ComboBox layoutX="449.0" layoutY="505.0" prefWidth="150.66678701171622" promptText="Salsas">
+          <items>
+            <FXCollections fx:factory="observableArrayList">
+              <String fx:value="Ciruela $20" />
+              <String fx:value="Soja $10" />
+              <String fx:value="Chili Sauce $15" />
+            </FXCollections>
+          </items>
+        </ComboBox>
+        <ImageView fx:id="img_Toping" fitHeight="102.50009190719709" fitWidth="136.6667938232422" layoutX="767.0" layoutY="80.0" pickOnBounds="true" preserveRatio="true">
+          <image>
+            <Image url="@../img/Platillos/Toping/huevos.jpg" />
+          </image>
+        </ImageView>
+        <ComboBox layoutX="763.0" layoutY="187.0" prefWidth="150.66678701171622" promptText="Toping">
+          <items>
+            <FXCollections fx:factory="observableArrayList">
+              <String fx:value="Huevos $25" />
+              <String fx:value="Aguacte $35" />
+            </FXCollections>
+          </items>
+        </ComboBox>
+      </children>
+    </Pane>
+  </children>
 </AnchorPane>
