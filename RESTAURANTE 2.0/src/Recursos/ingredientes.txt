@@ -1,0 +1,2 @@
+Caballo, 20
+Perro, 15

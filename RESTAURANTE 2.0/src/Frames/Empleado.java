@@ -21,8 +21,6 @@ public class Empleado extends javax.swing.JFrame {
     File archivo;
     private BufferedWriter bw;
     Thread cronometro;
-    String [] producto = new String [1];
-    int [] precio = new int [1];
     
     public Empleado() {
         //HILO CRONOMETRO
@@ -76,9 +74,10 @@ public class Empleado extends javax.swing.JFrame {
         Factura.setLocationRelativeTo(null);
 
         //ESCRITURA DE PARRAFO EN UN LABEL
-        fac.setText("<html><p>RESTAURANTE PITAKS </p><p>Colombia, Barranquilla</p><p>Teléfono: 30011111 - 31900000</p></html>");
+        fac.setText("<html><p>RESTAURANTE El Dragón Feliz </p><p>Tuxtla Gutiérrez, Chiapas</p><p>Teléfono: 964 100 5627 - 961 214 0519</p></html>");
         horario.setText("<html><p>Lunes a Sábado 9:00 a.m a 9:00 p.m </p><p> Domingos y Festivos 10:00 a.m a 8:00 p.m</p></html>");
-
+        setIconImage(new ImageIcon(getClass().getResource("/img/Fondos/dragon.png")).getImage());
+        
         //PRODUCTOS
         ptr1 = new Nodo();
         ptr2 = null;
@@ -221,6 +220,11 @@ public class Empleado extends javax.swing.JFrame {
         jButton1 = new javax.swing.JButton();
         jLabel6 = new javax.swing.JLabel();
         tiposBebidas = new javax.swing.JComboBox<>();
+        tiposBases = new javax.swing.JComboBox<>();
+        tiposCarnes = new javax.swing.JComboBox<>();
+        tiposSalsas = new javax.swing.JComboBox<>();
+        tiposToping = new javax.swing.JComboBox<>();
+        tiposVegetales = new javax.swing.JComboBox<>();
         jButton2 = new javax.swing.JButton();
         jLabel7 = new javax.swing.JLabel();
         jLabel5 = new javax.swing.JLabel();
@@ -362,7 +366,7 @@ public class Empleado extends javax.swing.JFrame {
         pagos = new javax.swing.JButton();
         jLabel9 = new javax.swing.JLabel();
 
-        Menu.setTitle("MENU PITAKS");
+        Menu.setTitle("MENU El dragón Feliz");
         Menu.setMinimumSize(new java.awt.Dimension(850, 611));
         Menu.setResizable(false);
 
@@ -372,7 +376,7 @@ public class Empleado extends javax.swing.JFrame {
         imgSexi.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Img/gaseosa.png"))); // NOI18N
         jPanel2.add(imgSexi, new org.netbeans.lib.awtextra.AbsoluteConstraints(600, 350, 100, 90));
 
-        jLabel8.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Img/damablanca.png"))); // NOI18N
+        jLabel8.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Img/Platillos/Toping/huevos1.jpg"))); // NOI18N
         jPanel2.add(jLabel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(600, 210, 100, 90));
 
         jButton1.setBackground(java.awt.Color.white);
@@ -386,11 +390,11 @@ public class Empleado extends javax.swing.JFrame {
         });
         jPanel2.add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(320, 540, 190, 30));
 
-        jLabel6.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Img/pSiciliana.jpg"))); // NOI18N
+        jLabel6.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Img/Platillos/Vegetales/ajies1.jpg"))); // NOI18N
         jPanel2.add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(340, 350, 120, 90));
 
         tiposBebidas.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
-        tiposBebidas.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Gaseosa Ligth : $ 2000", "Te Frío : $ 2500", "Agua Mineral : $ 3000" }));
+        tiposBebidas.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Té : $ 2000", "Agua : $ 2500", "Agua Mineral : $ 3000" }));
         tiposBebidas.setBorder(javax.swing.BorderFactory.createEtchedBorder());
         tiposBebidas.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
         tiposBebidas.addActionListener(new java.awt.event.ActionListener() {
@@ -399,6 +403,61 @@ public class Empleado extends javax.swing.JFrame {
             }
         });
         jPanel2.add(tiposBebidas, new org.netbeans.lib.awtextra.AbsoluteConstraints(600, 450, -1, 20));
+
+        tiposBases.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
+        tiposBases.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Arroz : $ 2000", "Spaghetti : $ 2500"}));
+        tiposBases.setBorder(javax.swing.BorderFactory.createEtchedBorder());
+        tiposBases.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
+        tiposBases.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                tiposBasesActionPerformed(evt);
+            }
+        });
+        jPanel2.add(tiposBases, new org.netbeans.lib.awtextra.AbsoluteConstraints(340, 170, 130, 20));
+
+        tiposCarnes.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
+        tiposCarnes.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Albondigas : $ 2000", "Camarones : $ 2500", "Pollo : $2150"}));
+        tiposCarnes.setBorder(javax.swing.BorderFactory.createEtchedBorder());
+        tiposCarnes.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
+        tiposCarnes.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                tiposCarnesActionPerformed(evt);
+            }
+        });
+        jPanel2.add(tiposCarnes, new org.netbeans.lib.awtextra.AbsoluteConstraints(340, 310, 130, -1));
+
+        tiposVegetales.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
+        tiposVegetales.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Ajies : $ 2000", "Ajo : $ 2500", "Apio : $2150", "Brocoli : $250", "Cebolla : $ 300"}));
+        tiposVegetales.setBorder(javax.swing.BorderFactory.createEtchedBorder());
+        tiposVegetales.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
+        tiposVegetales.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                tiposCarnesActionPerformed(evt);
+            }
+        });
+        jPanel2.add(tiposVegetales, new org.netbeans.lib.awtextra.AbsoluteConstraints(340, 450, 130, -1));
+
+        tiposSalsas.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
+        tiposSalsas.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Ciruela : $ 2000", "Soya : $ 2500", "Roja : $2150"}));
+        tiposSalsas.setBorder(javax.swing.BorderFactory.createEtchedBorder());
+        tiposSalsas.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
+        tiposSalsas.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                tiposCarnesActionPerformed(evt);
+            }
+        });
+        jPanel2.add(tiposSalsas, new org.netbeans.lib.awtextra.AbsoluteConstraints(600, 170, -1, -1));
+
+        tiposToping.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
+        tiposToping.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Huevo : $ 2000", "Aguacate : $ 2500"}));
+        tiposToping.setBorder(javax.swing.BorderFactory.createEtchedBorder());
+        tiposToping.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
+        tiposToping.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                tiposCarnesActionPerformed(evt);
+            }
+        });
+        jPanel2.add(tiposToping, new org.netbeans.lib.awtextra.AbsoluteConstraints(600, 310, -1, -1));
 
         jButton2.setBackground(java.awt.Color.white);
         jButton2.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
@@ -411,24 +470,24 @@ public class Empleado extends javax.swing.JFrame {
         });
         jPanel2.add(jButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(590, 540, 160, 30));
 
-        jLabel7.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Img/brasilia.png"))); // NOI18N
+        jLabel7.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Img/Platillos/Salsas/SalsaCiruelas1.jpg"))); // NOI18N
         jPanel2.add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(600, 70, 120, 90));
 
-        jLabel5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Img/pOpera.jpg"))); // NOI18N
+        jLabel5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Img/Platillos/Carnes/albondigas1.jpg"))); // NOI18N
         jPanel2.add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(340, 210, 120, 90));
 
         psici.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
         psici.setForeground(new java.awt.Color(255, 255, 255));
-        psici.setText("Pita Siciliana: $27000");
+        psici.setText("Ajies: $27000");
         psici.setBorder(javax.swing.BorderFactory.createEtchedBorder());
         jPanel2.add(psici, new org.netbeans.lib.awtextra.AbsoluteConstraints(340, 450, 130, -1));
 
         pgriega.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
         pgriega.setForeground(new java.awt.Color(255, 255, 255));
-        pgriega.setText("Pita Griega: $20000");
+        pgriega.setText("Arroz: $20000");
         pgriega.setBorder(javax.swing.BorderFactory.createEtchedBorder());
         pgriega.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
-        jPanel2.add(pgriega, new org.netbeans.lib.awtextra.AbsoluteConstraints(340, 170, 130, 20));
+        //jPanel2.add(pgriega, new org.netbeans.lib.awtextra.AbsoluteConstraints(340, 170, 130, 20));
 
         brasilia.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
         brasilia.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "0", "1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12", "13", "14", "15", "16", "17", "18", "19", "20", "21", "22", "23", "24", "25", "26", "27", "28", "29", "30", "31", "32", "33", "34", "35", "36", "37", "38", "39", "40" }));
@@ -440,11 +499,11 @@ public class Empleado extends javax.swing.JFrame {
         pitaSiciliana.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
         jPanel2.add(pitaSiciliana, new org.netbeans.lib.awtextra.AbsoluteConstraints(470, 380, 40, 40));
 
-        jLabel4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Img/pgriega.jpg"))); // NOI18N
+        jLabel4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Img/Platillos/Base/Spaghetti.jpg"))); // NOI18N
         jPanel2.add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(340, 70, 120, 90));
 
         pitaGriega.setFont(new java.awt.Font("Tahoma", 1, 10)); // NOI18N
-        pitaGriega.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "0", "1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12", "13", "14", "15", "16", "17", "18", "19", "20", "21", "22", "23", "24", "25", "26", "27", "28", "29", "30", "31", "32", "33", "34", "35", "36", "37", "38", "39", "40" }));
+        pitaGriega.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] {"0", "1"}));
         pitaGriega.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
         pitaGriega.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -480,13 +539,13 @@ public class Empleado extends javax.swing.JFrame {
 
         brasi.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
         brasi.setForeground(new java.awt.Color(255, 255, 255));
-        brasi.setText("Postre Brasilia: $10000");
+        brasi.setText("Ciruela: $1000");
         brasi.setBorder(javax.swing.BorderFactory.createEtchedBorder());
         jPanel2.add(brasi, new org.netbeans.lib.awtextra.AbsoluteConstraints(600, 170, -1, -1));
 
         popera.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
         popera.setForeground(new java.awt.Color(255, 255, 255));
-        popera.setText("Pita Opera: $15000");
+        popera.setText("Albóndigas: $15000");
         popera.setBorder(javax.swing.BorderFactory.createEtchedBorder());
         jPanel2.add(popera, new org.netbeans.lib.awtextra.AbsoluteConstraints(340, 310, 130, -1));
 
@@ -496,7 +555,7 @@ public class Empleado extends javax.swing.JFrame {
 
         dblanca.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
         dblanca.setForeground(new java.awt.Color(255, 255, 255));
-        dblanca.setText("Postre Dama Blanca: $8000");
+        dblanca.setText("Toping: $8000");
         dblanca.setBorder(javax.swing.BorderFactory.createEtchedBorder());
         jPanel2.add(dblanca, new org.netbeans.lib.awtextra.AbsoluteConstraints(600, 310, -1, -1));
 
@@ -836,9 +895,9 @@ public class Empleado extends javax.swing.JFrame {
         jLabel17.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Img/avatar3.jpg"))); // NOI18N
         jPanel3.add(jLabel17, new org.netbeans.lib.awtextra.AbsoluteConstraints(-130, 0, 500, 570));
 
-        jLabel23.setFont(new java.awt.Font("Times New Roman", 1, 48)); // NOI18N
+        jLabel23.setFont(new java.awt.Font("Times New Roman", 1, 28)); // NOI18N
         jLabel23.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel23.setText("PITAKS ");
+        jLabel23.setText("El Dragón Feliz ");
         jPanel3.add(jLabel23, new org.netbeans.lib.awtextra.AbsoluteConstraints(470, 40, 240, -1));
 
         numMeserito.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
@@ -994,9 +1053,6 @@ public class Empleado extends javax.swing.JFrame {
         generaFact.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
 		
-		System.out.println("Hola Mundo");
-		System.out.println(producto[0]);
-		System.out.println(precio[0]);
                 generaFactActionPerformed(evt);
             }
         });
@@ -1183,7 +1239,7 @@ public class Empleado extends javax.swing.JFrame {
         infoFact.setBounds(340, 290, 110, 30);
 
         fac.setFont(new java.awt.Font("Times New Roman", 1, 18)); // NOI18N
-        fac.setText("RESTAURANTE PITAKS");
+        fac.setText("RESTAURANTE El Dragón Feliz");
         jPanel10.add(fac);
         fac.setBounds(50, 10, 340, 80);
 
@@ -1453,7 +1509,7 @@ public class Empleado extends javax.swing.JFrame {
 
         jLabel3.setFont(new java.awt.Font("Times New Roman", 1, 18)); // NOI18N
         jLabel3.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel3.setText("RESUMEN DE VENTAS pitaks");
+        jLabel3.setText("RESUMEN DE VENTAS El Dragón Feliz");
         jPanel14.add(jLabel3);
         jLabel3.setBounds(40, 40, 270, 22);
 
@@ -1655,6 +1711,41 @@ int contador = 0;
 
     }//GEN-LAST:event_tiposBebidasActionPerformed
 
+    private void tiposBasesActionPerformed(java.awt.event.ActionEvent evt) {                                             
+        if (tiposBases.getSelectedIndex() == 0) {
+            String icon = "/Img/gaseosa.png";
+            URL url = this.getClass().getResource(icon);
+            ImageIcon icono = new ImageIcon(url);
+            jLabel4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Img/Platillos/Base/Spaghetti.jpg")));
+
+            imgSexi.setIcon(icono);
+        } else if (tiposBases.getSelectedIndex() == 1) {
+            String icon = "/Img/te_opt.png";
+            URL url = this.getClass().getResource(icon);
+            //ImageIcon icono = new ImageIcon(url);
+            jLabel4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Img/Platillos/Base/fideosChinos1.jpg")));
+            //imgSexi.setIcon(icono);
+        } else {
+            String icon = "/Img/agua_opt.png";
+            URL url = this.getClass().getResource(icon);
+            ImageIcon icono = new ImageIcon(url);
+
+            imgSexi.setIcon(icono);
+        }
+
+    }
+
+    private void tiposCarnesActionPerformed(java.awt.event.ActionEvent evt) {                                             
+        if (tiposCarnes.getSelectedIndex() == 0) {
+            jLabel5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Img/Platillos/Carnes/albondigas1.jpg")));
+        } else if (tiposCarnes.getSelectedIndex() == 1) {
+            jLabel5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Img/Platillos/Carnes/camarones1.jpg")));
+        } else if (tiposCarnes.getSelectedIndex() == 2) {
+            jLabel5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Img/Platillos/Carnes/pollo1.jpg")));
+        }
+
+    }
+
     void actualizarImagen() {
         tiposBebidas.addItemListener((ItemEvent arg0) -> {
             // TODO
@@ -1667,7 +1758,7 @@ int contador = 0;
         DefaultTableModel model = (DefaultTableModel) datosTable.getModel();
 
         if (pitaGriega.getSelectedIndex() > 0) {
-            String x = pgriega.getText();
+            String x = String.valueOf(tiposBases.getSelectedItem());
             String[] y;
             y = x.split(":");
 
@@ -1675,13 +1766,13 @@ int contador = 0;
         }
 
         if (pitaSiciliana.getSelectedIndex() > 0) {
-            String x = psici.getText();
+            String x = String.valueOf(tiposCarnes.getSelectedItem());
             String[] y;
             y = x.split(":");
             model.addRow(new Object[]{y[0], y[1], pitaSiciliana.getSelectedIndex()});
         }
         if (pitaOpera.getSelectedIndex() > 0) {
-            String x = popera.getText();
+            String x = String.valueOf(tiposVegetales.getSelectedItem());
             String[] y;
             y = x.split(":");
 
@@ -2290,7 +2381,7 @@ int contador = 0;
 
 
     private void jButton21ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton21ActionPerformed
-        JOptionPane.showMessageDialog(null, "En el dia de hoy se realizaron" + contador + " ventas. De un total de: " + suma, "PITAKS", JOptionPane.INFORMATION_MESSAGE);
+        JOptionPane.showMessageDialog(null, "En el dia de hoy se realizaron" + contador + " ventas. De un total de: " + suma, "El Dragón Feliz", JOptionPane.INFORMATION_MESSAGE);
     }//GEN-LAST:event_jButton21ActionPerformed
 
     private void jButton22ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton22ActionPerformed
@@ -2442,10 +2533,10 @@ int contador = 0;
         String t = TOTALtot.getText();
 
         if (Integer.parseInt(numMesa2.getText()) == index) {
-            JOptionPane.showMessageDialog(null, "La mesa " + index + " tuvo ventas de " + t, "PITAKS", JOptionPane.INFORMATION_MESSAGE);
+            JOptionPane.showMessageDialog(null, "La mesa " + index + " tuvo ventas de " + t, "El Dragón Feliz", JOptionPane.INFORMATION_MESSAGE);
 
         } else {
-            JOptionPane.showMessageDialog(null, "La mesa " + index + " no ha realizdo ventas. TOTAL = 0", "PITAKS", JOptionPane.INFORMATION_MESSAGE);
+            JOptionPane.showMessageDialog(null, "La mesa " + index + " no ha realizdo ventas. TOTAL = 0", "El Dragón Feliz", JOptionPane.INFORMATION_MESSAGE);
         }
 
 
@@ -2498,7 +2589,7 @@ int contador = 0;
             }
         }
 
-        JOptionPane.showMessageDialog(null, "El mesero que mas ventas realizo fue: " + mayor2, "PITAKS", JOptionPane.INFORMATION_MESSAGE);
+        JOptionPane.showMessageDialog(null, "El mesero que mas ventas realizo fue: " + mayor2, "El Dragón Feliz", JOptionPane.INFORMATION_MESSAGE);
     }//GEN-LAST:event_jButton23ActionPerformed
 
     private void jButton18ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton18ActionPerformed
@@ -2749,6 +2840,11 @@ int contador = 0;
     private javax.swing.JDialog resumenVentas;
     private javax.swing.JTextField telCli;
     private javax.swing.JComboBox<String> tiposBebidas;
+    private javax.swing.JComboBox<String> tiposBases;
+    private javax.swing.JComboBox<String> tiposCarnes;
+    private javax.swing.JComboBox<String> tiposSalsas;
+    private javax.swing.JComboBox<String> tiposVegetales;
+    private javax.swing.JComboBox<String> tiposToping;
     private javax.swing.JButton verMenu;
     // End of variables declaration//GEN-END:variables
 }

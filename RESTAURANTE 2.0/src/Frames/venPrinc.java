@@ -123,6 +123,7 @@ public class venPrinc extends javax.swing.JFrame {
             nombreA = "Erick";
             bandera = false;
             Empleado op = new Empleado();
+            op.setTitle("Restaurante El Dragón Feliz");
             op.setVisible(true);
             op.setLocationRelativeTo(null);
             this.dispose();
@@ -130,6 +131,7 @@ public class venPrinc extends javax.swing.JFrame {
             nombreA = "Alberto";
             bandera = false;
             Empleado op = new Empleado();
+            op.setTitle("Restaurante El Dragón Feliz");
             op.setVisible(true);
             op.setLocationRelativeTo(null);
             this.dispose();

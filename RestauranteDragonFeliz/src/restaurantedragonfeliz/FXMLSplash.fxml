@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="335.0" prefWidth="410.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="restaurantedragonfeliz.FXMLDocumentController">
+  <children>
+    <Pane layoutX="0.0" layoutY="-1.0" prefHeight="336.0" prefWidth="410.0" style="-fx-background-color: black;">
+      <children>
+        <ProgressBar fx:id="progressBar" layoutX="0.0" layoutY="308.0" prefHeight="28.0" prefWidth="285.0" progress="0.0" />
+        <ImageView fitHeight="307.5" fitWidth="410.0" layoutX="0.0" layoutY="0.0" pickOnBounds="true" preserveRatio="true">
+          <image>
+            <Image url="@../img/login.jpg" />
+          </image>
+        </ImageView>
+        <Label layoutX="232.0" layoutY="11.0" text="\@ 2018 PhamtonSoft Inc." textFill="BLACK">
+          <font>
+            <Font name="Cambria Bold" size="14.0" />
+          </font>
+        </Label>
+        <Label layoutX="315.0" layoutY="30.0" text="Version 1.1" textFill="BLACK">
+          <font>
+            <Font name="System Bold Italic" size="15.0" />
+          </font>
+        </Label>
+        <Label fx:id="progress" layoutX="295.0" layoutY="312.0" prefHeight="20.0" prefWidth="115.0" text="Loading" textFill="#fcf9f9">
+          <font>
+            <Font size="14.0" />
+          </font>
+        </Label>
+        <Line endX="305.0" endY="0.0" layoutX="103.0" layoutY="305.0" startX="-100.0" stroke="RED" strokeWidth="5.0" />
+      </children>
+    </Pane>
+  </children>
+</AnchorPane>

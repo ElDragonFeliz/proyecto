@@ -446,7 +446,7 @@ public class Opciones extends javax.swing.JFrame {
         pitaSiciliana.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
         jPanel2.add(pitaSiciliana, new org.netbeans.lib.awtextra.AbsoluteConstraints(470, 380, 40, 40));
 
-        jLabel4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Img/pgriega.jpg"))); // NOI18N
+        jLabel4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Img/Platillos/Base/fideosChinos1.jpg"))); // NOI18N
         jPanel2.add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(340, 70, 120, 90));
 
         pitaGriega.setFont(new java.awt.Font("Tahoma", 1, 10)); // NOI18N
