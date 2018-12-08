@@ -20,7 +20,11 @@ import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.control.CheckBox;
 import javafx.scene.control.ComboBox;
+<<<<<<< HEAD
 import javafx.scene.control.TextField;
+=======
+import javafx.scene.control.TableColumn;
+>>>>>>> c10b58b2b0592e49a5ca196fe3e0f5958ab2776c
 import javafx.scene.image.ImageView;
 import javafx.stage.Stage;
 
@@ -45,13 +49,38 @@ public class FXMLVentasController {
 
     @FXML
     private ComboBox<?> cbx_Base, cbx_Carnes, cbx_Salsas, cbx_Toping;
+    
+     @FXML
+    private Button btn_CancelarPedido, btn_Cobrar, btn_EliminarFila;
+     
+    @FXML
+    private TableColumn<?, ?> tc_Ingrediente;
+
+    @FXML
+    private TableColumn<?, ?> tc_Platillo;
+
+    @FXML
+    private TableColumn<?, ?> tc_Precio;
 
     @FXML
     private TextField tf_1, tf_2, tf_3, tf_4, tf_5;
     
     @FXML
     void OnAction_Pay(ActionEvent event) {
-        
+        Stage stage = new Stage();
+
+        stage = (Stage) (((Node) event.getSource()).getScene().getWindow());
+        stage.close();
+        Parent root = null;
+        try {
+            root = FXMLLoader.load(getClass().getResource("FXMLCocineroTicket.fxml"));
+        } catch (IOException ex) {
+            Logger.getLogger(FXMLDocumentController.class.getName()).log(Level.SEVERE, null, ex);
+        }
+        Scene scene = new Scene(root);
+        stage.setScene(scene);
+        stage.setTitle("Restaurant - El Dragon Feliz - Ticket");
+        stage.show();
     }
     
     @FXML
@@ -133,6 +162,33 @@ public class FXMLVentasController {
     void On_Action_Add(ActionEvent event) {
         
     }
+    
+    @FXML
+    void OnAction_CancelarPedido(ActionEvent event) {
+        Stage stage = new Stage();
+
+        stage = (Stage) (((Node) event.getSource()).getScene().getWindow());
+        stage.close();
+        Parent root = null;
+        try {
+            root = FXMLLoader.load(getClass().getResource("FXMLVentas.fxml"));
+        } catch (IOException ex) {
+            Logger.getLogger(FXMLDocumentController.class.getName()).log(Level.SEVERE, null, ex);
+        }
+        Scene scene = new Scene(root);
+        stage.setScene(scene);
+        stage.setTitle("Dragon Feliz - Menú de Venta");
+        stage.show();
+    }
+
+    @FXML
+    void OnAction_Cobrar(ActionEvent event) {
+    }
+
+    @FXML
+    void On_Action_EliminarFila(ActionEvent event) {
+    }
+
 
     @FXML
     void initialize() {

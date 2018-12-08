@@ -8,11 +8,7 @@
   </information>
   <resources>
     <j2se version="1.6+" href="http://java.sun.com/products/autodl/j2se"/>
-<<<<<<< HEAD
-    <jar href="RestauranteDragonFeliz.jar" size="3679861" download="eager" />
-=======
     <jar href="RestauranteDragonFeliz.jar" size="3725341" download="eager" />
->>>>>>> c10b58b2b0592e49a5ca196fe3e0f5958ab2776c
   </resources>
   <applet-desc  width="800" height="600" main-class="com.javafx.main.NoJavaFXFallback"  name="RestauranteDragonFeliz" >
     <param name="requiredFXVersion" value="8.0+"/>
