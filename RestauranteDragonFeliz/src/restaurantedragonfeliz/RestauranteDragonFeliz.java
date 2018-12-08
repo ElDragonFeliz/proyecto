@@ -42,7 +42,7 @@ public class RestauranteDragonFeliz extends Application {
             double progress =(double) i/10;
             System.out.println("progress: " +  progress);            
             LauncherImpl.notifyPreloader(this, new Preloader.ProgressNotification(progress));
-            Thread.sleep(300);
+            Thread.sleep(100);
         }
         
     }
