@@ -127,6 +127,7 @@
             </FXCollections>
           </items>
         </ComboBox>
+        <TextArea fx:id="txt" layoutX="741.0" layoutY="460.0" prefHeight="79.0" prefWidth="200.0" wrapText="true" />
       </children>
     </Pane>
   </children>
