@@ -11,7 +11,7 @@
 <?import javafx.scene.shape.*?>
 <?import javafx.scene.text.*?>
 
-<AnchorPane id="AnchorPane" prefHeight="680.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="restaurantedragonfeliz.FXMLVentasController">
+<AnchorPane id="AnchorPane" prefHeight="680.0" prefWidth="1000.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="restaurantedragonfeliz.FXMLVentasController">
   <children>
     <Pane layoutX="0.0" layoutY="0.0" prefHeight="680.0" prefWidth="1000.0" style="-fx-background-color: black;">
       <children>
@@ -27,20 +27,20 @@
                 <Font name="System Bold" size="20.0" fx:id="x2" />
               </font>
             </Label>
-            <CheckBox fx:id="cb_Ajies" disable="false" layoutX="21.0" layoutY="51.0" mnemonicParsing="false" onAction="#ac_ajies" text="Ajies" textFill="WHITE">
+            <CheckBox fx:id="cb_Ajies" disable="false" layoutX="10.0" layoutY="51.0" mnemonicParsing="false" onAction="#ac_ajies" text="Ajies $15" textFill="WHITE">
               <font>
                 <Font name="System Bold" size="18.0" fx:id="x1" />
               </font>
             </CheckBox>
-            <CheckBox fx:id="cb_Apio" font="$x1" layoutX="20.0" layoutY="86.0" mnemonicParsing="false" onAction="#ac_apio" text="Apio" textFill="WHITE" />
-            <CheckBox fx:id="cb_Brocoli" font="$x1" layoutX="20.0" layoutY="120.0" mnemonicParsing="false" onAction="#ac_brocoli" text="Brocoli" textFill="WHITE" />
-            <CheckBox fx:id="cb_cebolla" font="$x1" layoutX="20.0" layoutY="153.0" mnemonicParsing="false" onAction="#ac_cebolla" text="Cebolla" textFill="WHITE" />
-            <CheckBox fx:id="cb_Papa" font="$x1" layoutX="20.0" layoutY="185.0" mnemonicParsing="false" onAction="#ac_papa" text="Papa" textFill="WHITE" />
-            <TextField fx:id="tf_2" disable="true" layoutX="125.0" layoutY="85.0" prefWidth="54.0" promptText="#" />
-            <TextField fx:id="tf_3" disable="true" layoutX="125.0" layoutY="119.0" prefWidth="54.0" promptText="#" text="" />
-            <TextField fx:id="tf_4" disable="true" layoutX="125.0" layoutY="152.0" prefWidth="54.0" promptText="#" />
-            <TextField fx:id="tf_5" disable="true" layoutX="124.0" layoutY="185.0" prefWidth="54.0" promptText="#" />
-            <TextField fx:id="tf_1" disable="true" layoutX="125.0" layoutY="52.0" prefWidth="54.0" promptText="#" />
+            <CheckBox fx:id="cb_Apio" font="$x1" layoutX="9.0" layoutY="85.0" mnemonicParsing="false" onAction="#ac_apio" text="Apio $13" textFill="WHITE" />
+            <CheckBox fx:id="cb_Brocoli" font="$x1" layoutX="10.0" layoutY="121.0" mnemonicParsing="false" onAction="#ac_brocoli" text="Brocoli $8" textFill="WHITE" />
+            <CheckBox fx:id="cb_cebolla" font="$x1" layoutX="10.0" layoutY="153.0" mnemonicParsing="false" onAction="#ac_cebolla" text="Cebolla $8" textFill="WHITE" />
+            <CheckBox fx:id="cb_Papa" font="$x1" layoutX="10.0" layoutY="185.0" mnemonicParsing="false" onAction="#ac_papa" text="Papa $10" textFill="WHITE" />
+            <TextField fx:id="tf_2" disable="true" layoutX="128.0" layoutY="85.0" prefWidth="54.0" promptText="#" />
+            <TextField fx:id="tf_3" disable="true" layoutX="128.0" layoutY="119.0" prefWidth="54.0" promptText="#" text="" />
+            <TextField fx:id="tf_4" disable="true" layoutX="128.0" layoutY="152.0" prefWidth="54.0" promptText="#" />
+            <TextField fx:id="tf_5" disable="true" layoutX="128.0" layoutY="184.0" prefWidth="54.0" promptText="#" />
+            <TextField fx:id="tf_1" disable="true" layoutX="128.0" layoutY="52.0" prefWidth="54.0" promptText="#" />
           </children>
         </Pane>
         <ImageView fitHeight="676.0508477810163" fitWidth="299.9022521972656" layoutX="28.0" layoutY="-2.0" pickOnBounds="true" preserveRatio="true">
@@ -76,7 +76,7 @@
             <Image url="@../img/Platillos/Base/spaghetti.jpg" />
           </image>
         </ImageView>
-        <ComboBox layoutX="450.0" layoutY="191.0" prefWidth="150.66678701171622" promptText="Base">
+        <ComboBox fx:id="cbx_Base" layoutX="450.0" layoutY="191.0" prefWidth="150.66678701171622" promptText="Base">
           <items>
             <FXCollections fx:factory="observableArrayList">
               <String fx:value="Arroz $120" />
@@ -89,11 +89,11 @@
             <Image url="@../img/Platillos/Carnes/albondigas.jpg" />
           </image>
         </ImageView>
-        <ComboBox layoutX="449.0" layoutY="346.0" prefWidth="150.66678701171622" promptText="Carnes">
+        <ComboBox fx:id="cbx_Carnes" layoutX="449.0" layoutY="346.0" prefWidth="150.66678701171622" promptText="Carnes">
           <items>
             <FXCollections fx:factory="observableArrayList">
               <String fx:value="Albondigas $90" />
-              <String fx:value="Camaron $ 110" />
+              <String fx:value="Camaron $110" />
               <String fx:value="Res $80" />
               <String fx:value="Pollo $75" />
               <String fx:value="Cerdo $65" />
@@ -105,7 +105,7 @@
             <Image url="@../img/Platillos/Salsas/SalsaCiruelas.jpg" />
           </image>
         </ImageView>
-        <ComboBox layoutX="449.0" layoutY="505.0" prefWidth="150.66678701171622" promptText="Salsas">
+        <ComboBox id="cbx_" fx:id="cbx_Salsas" layoutX="449.0" layoutY="505.0" prefWidth="150.66678701171622" promptText="Salsas">
           <items>
             <FXCollections fx:factory="observableArrayList">
               <String fx:value="Ciruela $20" />
@@ -119,7 +119,7 @@
             <Image url="@../img/Platillos/Toping/huevos.jpg" />
           </image>
         </ImageView>
-        <ComboBox layoutX="763.0" layoutY="187.0" prefWidth="150.66678701171622" promptText="Toping">
+        <ComboBox fx:id="cbx_Toping" layoutX="763.0" layoutY="187.0" prefWidth="150.66678701171622" promptText="Toping">
           <items>
             <FXCollections fx:factory="observableArrayList">
               <String fx:value="Huevos $25" />

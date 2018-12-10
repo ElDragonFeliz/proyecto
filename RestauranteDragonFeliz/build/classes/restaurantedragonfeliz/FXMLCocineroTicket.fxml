@@ -31,13 +31,6 @@
             <Image url="@../img/MenuVentas/chef.png" />
           </image>
         </ImageView>
-        <TableView layoutX="275.0" layoutY="118.0" prefHeight="287.0" prefWidth="453.0">
-          <columns>
-            <TableColumn maxWidth="5000.0" minWidth="10.0" prefWidth="238.0" text="Ingrediente" fx:id="tc_Ingrediente" />
-            <TableColumn maxWidth="5000.0" minWidth="10.0" prefWidth="109.0" text="Precio" fx:id="tc_Precio" />
-            <TableColumn maxWidth="5000.0" minWidth="10.0" prefWidth="113.0" text="No. Platillo" fx:id="tc_Platillo" />
-          </columns>
-        </TableView>
         <Button fx:id="btn_Cobrar" layoutX="584.0" layoutY="420.0" mnemonicParsing="false" onAction="#OnAction_Cobrar" prefHeight="46.920166015625" prefWidth="144.0" style="-fx-background-color: transparent;&#10;-fx-border-color: White;" text="Cobrar" textFill="WHITE">
           <font>
             <Font name="System Bold" size="22.0" fx:id="x1" />
@@ -45,6 +38,9 @@
         </Button>
         <Button fx:id="btn_CancelarPedido" font="$x1" layoutX="431.0" layoutY="420.0" mnemonicParsing="false" onAction="#OnAction_CancelarPedido" prefHeight="46.920166015625" prefWidth="144.0" style="-fx-background-color: transparent;&#10;-fx-border-color: White;" text="Cancelar" textFill="WHITE" />
         <Button id="btn_EliminarPedido" fx:id="btn_EliminarFila" font="$x1" layoutX="275.0" layoutY="420.0" mnemonicParsing="false" onAction="#On_Action_EliminarFila" prefHeight="46.920166015625" prefWidth="144.0" style="-fx-background-color: transparent;&#10;-fx-border-color: White;" text="Eliminar" textFill="WHITE" />
+        <TextArea id="txt_precio" fx:id="txt_platillo" layoutX="622.0" layoutY="115.0" prefHeight="268.0" prefWidth="106.0" wrapText="true" />
+        <TextArea fx:id="txt_precio" layoutX="468.0" layoutY="115.0" prefHeight="268.0" prefWidth="154.0" wrapText="true" />
+        <TextArea fx:id="txt_ingredientes" layoutX="268.0" layoutY="115.0" prefHeight="268.0" prefWidth="200.0" wrapText="true" />
       </children>
     </Pane>
   </children>
