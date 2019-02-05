@@ -31,7 +31,7 @@ import javafx.stage.Stage;
  * @author Kevin Alejandro
  */
 public class FXMLVentasController {
-
+    int cobrar = 1;
     int contador = 0;
     int platillo = 1;
     boolean bandera = false;
@@ -78,57 +78,93 @@ public class FXMLVentasController {
         tf_3.setText("0");
         tf_4.setText("0");
         tf_5.setText("0");
-        String [] product = new String [10];
-        String [] cost = new String [10];
+        String [] product = new String [100];
+        String [] cost = new String [100];
+        String [] platillos = new String [100];
         if(cbx_Base.getValue()!=null) {
             if (cbx_Base.getSelectionModel().getSelectedIndex() == 0){
                 product[0] = "Arroz";
-                cost [0] = "120"; 
+                cost [0] = "120";
+                platillos[0] = String.valueOf(platillo);
             } else {
                 product[0] = "Fideos";
                 cost [0] = "120"; 
+                platillos[0] = String.valueOf(platillo);
             }
         }
         if(cbx_Carnes.getValue()!=null) {
             if (cbx_Carnes.getSelectionModel().getSelectedIndex() == 0){
                 product[1] = "Albóndigas";
-                cost [1] = "90"  + "\n"; 
+                cost [1] = "90"; 
+                platillos[0] = String.valueOf(platillo);
             } else if (cbx_Carnes.getSelectionModel().getSelectedIndex() == 1) {
                 product[1] = "Camarón";
                 cost [1] = "110"; 
+                platillos[0] = String.valueOf(platillo);
             } else if (cbx_Carnes.getSelectionModel().getSelectedIndex() == 2) {
                 product[1] = "Res";
                 cost [1] = "80"; 
+                platillos[0] = String.valueOf(platillo);
             } else if (cbx_Carnes.getSelectionModel().getSelectedIndex() == 3) {
                 product[1] = "Pollo";
                 cost [1] = "75"; 
+                platillos[0] = String.valueOf(platillo);
             } else if (cbx_Carnes.getSelectionModel().getSelectedIndex() == 4) {
                 product[1] = "Cerdo";
                 cost [1] = "65"; 
+                platillos[0] = String.valueOf(platillo);
             }
         }
         if(cbx_Salsas.getValue()!=null) {
             if (cbx_Carnes.getSelectionModel().getSelectedIndex() == 0){
                 product[2] = "Ciruela";
                 cost [2] = "20"; 
+                platillos[0] = String.valueOf(platillo);
             } else if (cbx_Carnes.getSelectionModel().getSelectedIndex() == 1) {
                 product[2] = "Soya";
                 cost [2] = "10"; 
+                platillos[0] = String.valueOf(platillo);
             } else if (cbx_Carnes.getSelectionModel().getSelectedIndex() == 2) {
                 product[2] = "Chili Sauce";
                 cost [2] = "15"; 
+                platillos[0] = String.valueOf(platillo);
             }
         }
         if(cbx_Toping.getValue()!=null) {
             if (cbx_Toping.getSelectionModel().getSelectedIndex() == 0){
                 product[3] = "Huevos";
                 cost [3] = "25"; 
+                platillos[0] = String.valueOf(platillo);
             } else if (cbx_Carnes.getSelectionModel().getSelectedIndex() == 1) {
                 product[3] = "Aguacate";
                 cost [3] = "35"; 
+                platillos[0] = String.valueOf(platillo);
             }
         }
-            
+        
+        if(cb_Ajies.isSelected()!=false) {
+            product[50] = "Ajies";
+            cost[50] = "15";
+            platillos[0] = String.valueOf(platillo);
+        } if (cb_Apio.isSelected()!=false) {
+            product[51] = "Apio";
+            cost[51] = "13";
+            platillos[0] = String.valueOf(platillo);
+        } if (cb_Brocoli.isSelected()!=false) {
+            product[52] = "Brocoli";
+            cost[52] = "8";
+            platillos[0] = String.valueOf(platillo);
+        } if (cb_cebolla.isSelected()!=false) {
+            product [53] = "Cebolla";
+            cost[53] = "8";
+            platillos[0] = String.valueOf(platillo);
+        } if (cb_Papa.isSelected()!=false) {
+            product [54] = "Papa";
+            cost[54] = "10";
+            platillos[0] = String.valueOf(platillo);
+        }
+        
+        System.out.println("Platillo: "+platillos[0]);
 //        if(cbx_Carnes.getValue()!=null)
 //            product [1] = cbx_Carnes.getSelectionModel().getSelectedItem();
 //         if(cbx_Salsas.getValue()!=null)
@@ -200,8 +236,10 @@ public class FXMLVentasController {
 
         FileWriter fichero = null;
         FileWriter fichero2 = null;
+        FileWriter fichero3 = null;
         PrintWriter pw = null;
         PrintWriter pw2 = null;
+        PrintWriter pw3 = null;
         try
         {
             fichero = new FileWriter("./productos.txt");
@@ -216,13 +254,26 @@ public class FXMLVentasController {
             }
             fichero2 = new FileWriter("./precios.txt");
             pw2 = new PrintWriter(fichero2);
+            int contador = 0;
             //System.out.println("Costo2: ");
             for (int i=0; i<cost.length; i++) {
                 if(cost[i]!=null) {
                     //System.out.println(cost[i]);
                     pw2.print(cost[i] + "\n");
+                    contador++;
                 }
                 
+            }
+            System.out.println("Contador: " + contador);
+            fichero3 = new FileWriter("./Platillos.txt");
+            pw3 = new PrintWriter(fichero3);
+            for (int i=0; i<platillos.length; i++) {
+                if(platillos[i]!=null) {
+                    for (int j=0; i<contador; i++){
+                        pw3.print(platillos[i] + "\n");
+                    }
+                    
+                }
             }
 //            for (int i = 0; i < base.length(); i++) {
 //                if (base.charAt(i)=='n')
@@ -239,9 +290,11 @@ public class FXMLVentasController {
            try {
            // Nuevamente aprovechamos el finally para 
            // asegurarnos que se cierra el fichero.
-           if (null != fichero || null!=fichero2)
+           if (null != fichero || null!=fichero2 || null!=fichero3) {
               fichero.close();
-           fichero2.close();
+              fichero2.close();
+              fichero3.close();
+           }
            
            } catch (Exception e2) {
               e2.printStackTrace();
@@ -471,10 +524,9 @@ public class FXMLVentasController {
         stage.setTitle("Restaurant - El Dragon Feliz - Login");
         stage.show();
     }
-
     @FXML
     void On_Action_Add(ActionEvent event) {
-
+        this.platillo++;
     }
 
     @FXML
